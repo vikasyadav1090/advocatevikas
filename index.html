@@ -2,914 +2,1343 @@
 <html lang="hi" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Fast-Track Divorce & 2X Maintenance Blueprint + 1-on-1 Legal Consultancy</title>
-    <!-- Tailwind CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advocate Vikas Yadav | District & Sessions Court, Etawah</title>
+    
+    <!-- Meta tag placeholders that update dynamically via JS router -->
+    <meta name="description" id="metaDescription" content="Advocate Vikas Yadav - Premier Criminal, Civil & Matrimonial Lawyer at District & Sessions Court, Etawah. 16 Core Practice Areas.">
+    <meta name="keywords" id="metaKeywords" content="advocate vikas yadav etawah, district court etawah lawyer, bail lawyer etawah, criminal defense etawah">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#0c1a2e',
+                            900: '#07101f',
+                            950: '#040913',
+                        },
+                        gold: {
+                            400: '#e5c07b',
+                            500: '#d4af37',
+                            600: '#aa8c2c',
+                            700: '#856d20'
+                        }
+                    },
+                    fontFamily: {
+                        cinzel: ['Cinzel', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&family=Poppins:wght@600;700;800;900&display=swap');
-        
-        body {
-            font-family: 'Hind', sans-serif;
-            -webkit-tap-highlight-color: transparent;
-            background-color: #090d16;
-            color: #f1f5f9;
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #f7e7b4 0%, #d4af37 50%, #aa8c2c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
-        
-        .heading-font {
-            font-family: 'Poppins', sans-serif;
+        .gold-border-glow {
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
         }
-
-        /* High-converting button animations */
-        .pulse-btn {
-            animation: pulseGlow 1.6s infinite;
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
         }
-        @keyframes pulseGlow {
-            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(168, 85, 247, 0.75); }
-            70% { transform: scale(1.02); box-shadow: 0 0 0 14px rgba(168, 85, 247, 0); }
-            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(168, 85, 247, 0); }
+        ::-webkit-scrollbar-track {
+            background: #07101f;
         }
-
-        .pulse-amber {
-            animation: pulseAmberGlow 1.6s infinite;
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 4px;
         }
-        @keyframes pulseAmberGlow {
-            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.75); }
-            70% { transform: scale(1.02); box-shadow: 0 0 0 14px rgba(245, 158, 11, 0); }
-            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
-        }
-
-        /* Shimmer effect for VIP Consultancy Card */
-        .shimmer-border {
-            background: linear-gradient(135deg, rgba(245,158,11,0.18) 0%, rgba(15,23,42,0.96) 50%, rgba(16,185,129,0.18) 100%);
-        }
-
-        /* Custom Scrollbar for Modal Boxes */
-        .modal-scroll::-webkit-scrollbar {
-            width: 5px;
-        }
-        .modal-scroll::-webkit-scrollbar-track {
-            background: #0f172a;
-            border-radius: 8px;
-        }
-        .modal-scroll::-webkit-scrollbar-thumb {
-            background: #475569;
-            border-radius: 8px;
+        ::-webkit-scrollbar-thumb:hover {
+            background: #d4af37;
         }
     </style>
 </head>
-<body class="bg-slate-950 text-slate-100 antialiased pb-32 selection:bg-purple-600 selection:text-white">
+<body class="bg-navy-950 text-slate-200 font-sans min-h-screen flex flex-col selection:bg-gold-500 selection:text-navy-950">
 
-    <!-- 1. TOP STICKY URGENCY BAR WITH LIVE 15-MINUTE COUNTDOWN TIMER -->
-    <div class="bg-gradient-to-r from-red-700 via-purple-800 to-red-700 text-white py-2 px-3 sticky top-0 z-40 shadow-xl border-b border-amber-400/30">
-        <div class="max-w-md mx-auto flex items-center justify-between text-[11px] sm:text-xs font-extrabold tracking-wide">
-            <div class="flex items-center space-x-1.5">
-                <span class="inline-block w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
-                <span>⚡ Aakhri <span id="slotCount" class="text-amber-300 underline">7 Slots</span> Baaki - Offer Ends In</span>
+    <!-- Top Announcement & Urgent Emergency Bar -->
+    <div class="bg-gradient-to-r from-red-950 via-navy-900 to-red-950 border-b border-red-900/50 text-xs py-2 px-4">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center gap-2 text-red-300 font-medium">
+                <span class="inline-block w-2 h-2 rounded-full bg-red-500 animate-ping"></span>
+                <span>इटावा जिला न्यायालय एवं पुलिस हिरासत से संबंधित 24/7 आपातकालीन विधिक सहायता</span>
             </div>
-            <div class="bg-black/40 border border-amber-400/50 px-2 py-0.5 rounded-md text-amber-300 font-mono text-xs flex items-center space-x-1">
-                <i class="fa-regular fa-clock text-[10px]"></i>
-                <span id="countdownTimer">14:59</span>
-                <span>⚡</span>
+            <div class="flex items-center gap-4 text-slate-300">
+                <a href="tel:+919876543210" class="hover:text-gold-400 transition-colors flex items-center gap-1.5 font-semibold">
+                    <i data-lucide="phone-call" class="w-3.5 h-3.5 text-gold-500"></i> +91 8979737979
+                </a>
+                <span class="text-slate-600">|</span>
+                <span class="flex items-center gap-1 text-slate-400">
+                    <i data-lucide="map-pin" class="w-3.5 h-3.5 text-gold-500"></i> चैंबर नं. 1, ईदगाह गेट, कचहरी, इटावा
+                </span>
             </div>
         </div>
     </div>
 
-    <!-- 2. LIVE SOCIAL PROOF PURCHASE TOAST -->
-    <div id="purchaseToast" class="fixed bottom-24 left-3 right-3 bg-slate-900/95 border-2 border-purple-500 text-white p-3 rounded-2xl shadow-2xl z-40 transition-all duration-500 opacity-0 pointer-events-none transform translate-y-10 flex items-center space-x-3 max-w-sm mx-auto backdrop-blur-md">
-        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-purple-600 to-amber-500 text-white flex items-center justify-center font-bold text-base shrink-0 shadow-md">
-            <i class="fa-solid fa-shield-halved"></i>
-        </div>
-        <div class="overflow-hidden flex-1">
-            <div class="flex items-center justify-between">
-                <p id="toastUser" class="font-bold text-xs text-amber-400 truncate"></p>
-                <span class="text-[9px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 px-1.5 py-0.2 rounded font-semibold">Verified UPI</span>
-            </div>
-            <p id="toastDetail" class="text-[11px] text-slate-200 truncate mt-0.5"></p>
-        </div>
-    </div>
-
-    <!-- MAIN MOBILE CONTAINER -->
-    <div class="max-w-md mx-auto px-4 pt-5 pb-8">
-
-        <!-- 3. HERO SECTION -->
-        <header class="text-center mb-7">
-            <span class="inline-block bg-purple-950/90 border border-purple-500/80 text-purple-200 font-bold px-3.5 py-1 rounded-full text-[11px] mb-3 uppercase tracking-wider shadow-md">
-                💣 Secret Legal Victory Blueprint (Updated 2026 Edition)
-            </span>
-
-            <h1 class="heading-font text-2xl sm:text-3xl font-black text-white leading-tight mb-3">
-                Tareekh Par Tareekh Se Chutkara! <br/>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-yellow-400 to-amber-500 underline decoration-purple-600">2-3 Court Dates Mein Case Close</span> Formula!
-            </h1>
-
-            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-5">
-                Lawyer Har Tareekh Ke <span class="text-red-400 font-bold">₹5,000</span> Leta Hai—Ye <span class="text-amber-400 font-bold">₹399 Ka Formula</span> Aapke Lakhon Rupaye Aur Saalon Ka Time Bachayega.
-            </p>
-
-            <!-- Primary CTA Button -->
-            <button onclick="openPaymentModal('Course Blueprint - ₹399')" class="pulse-btn w-full bg-gradient-to-r from-purple-600 via-fuchsia-600 to-purple-600 active:scale-95 text-white font-extrabold text-base py-4 px-4 rounded-2xl shadow-2xl flex items-center justify-center space-x-2 border border-purple-400/40">
-                <i class="fa-solid fa-qrcode text-amber-300 text-lg"></i>
-                <span>PAY ₹399 & GET ACCESS NOW</span>
-            </button>
-
-            <p class="text-[11px] text-slate-400 mt-2.5 flex items-center justify-center space-x-3">
-                <span><i class="fa-solid fa-check-double text-emerald-400"></i> BNS/BNSS & CrPC Updated</span>
-                <span>•</span>
-                <span><i class="fa-solid fa-bolt text-amber-400"></i> Instant Digital Access</span>
-            </p>
-
-            <!-- Trust Metrics Strip -->
-            <div class="grid grid-cols-3 gap-2 mt-5">
-                <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-2.5 text-center">
-                    <p class="heading-font text-base font-black text-amber-400">14,200+</p>
-                    <p class="text-[10px] text-slate-400 leading-tight">Logon Ne Case Fast-Track Kiya</p>
-                </div>
-                <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-2.5 text-center">
-                    <p class="heading-font text-base font-black text-emerald-400">15+ Drafts</p>
-                    <p class="text-[10px] text-slate-400 leading-tight">Ready-To-File Court Applications</p>
-                </div>
-                <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-2.5 text-center">
-                    <p class="heading-font text-base font-black text-purple-400">4.9/5 ⭐</p>
-                    <p class="text-[10px] text-slate-400 leading-tight">Husband & Wife Dono Ke Liye</p>
-                </div>
-            </div>
-        </header>
-
-        <!-- 4. PAIN-POINT & REALITY CHECK BOX -->
-        <section class="mb-7">
-            <div class="bg-gradient-to-b from-red-950/75 to-slate-900 border-2 border-red-500/50 rounded-2xl p-4 shadow-xl">
-                <h2 class="heading-font text-sm sm:text-base font-extrabold text-amber-300 mb-2.5 flex items-start space-x-2">
-                    <i class="fa-solid fa-triangle-exclamation text-red-400 mt-1 shrink-0"></i>
-                    <span>Kya Aapka Vakeel Bhi Har Tareekh Pe Sirf Agli Tareekh Leke Aa Jata Hai?</span>
-                </h2>
-                <ul class="space-y-2 text-xs text-slate-200 leading-relaxed">
-                    <li class="flex items-start space-x-2">
-                        <span class="text-red-400 font-bold shrink-0">❌</span>
-                        <span><strong>4-5 Saal Case Kyun Khichta Hai?</strong> Kyunki 498A (85 BNS), 125 CrPC (144 BNSS), DV Act aur HMA Divorce mein jab tak Time-Bound Statutory Application nahi lagti, tab tak saamne wali party bahane bana kar tareekh badhwati rehti hai.</span>
-                    </li>
-                    <li class="flex items-start space-x-2">
-                        <span class="text-red-400 font-bold shrink-0">❌</span>
-                        <span><strong>Jhoota Income & Assets Affidavit:</strong> Court mein saamne wali party khud ko garib ya berozgar dikhati hai aur aam vakeel uspe <em>Perjury (Sec 340 CrPC / 379 BNSS)</em> ya <em>Bank Discovery</em> ki arzi hi nahi lagate!</span>
-                    </li>
-                    <li class="flex items-start space-x-2">
-                        <span class="text-red-400 font-bold shrink-0">❌</span>
-                        <span><strong>Har Hearing Ka ₹3,000–₹5,000 Kharcha:</strong> Jitni zyada tareekh padegi, aapki jeb se utne lakhon rupaye nikalenge aur mental tension alag!</span>
-                    </li>
-                </ul>
-                <div class="mt-3 pt-2.5 border-t border-red-500/30 text-[11px] sm:text-xs text-emerald-300 font-bold text-center">
-                    ✅ Ab Rukiye! Ye Blueprint Aapko Agli Hi Tareekh Par Case Palatne Ka Kanooni Hathiyar Dega!
-                </div>
-            </div>
-        </section>
-
-        <!-- 5. DUAL ADVANTAGE GRID (HUSBAND SIDE VS WIFE SIDE) -->
-        <section class="mb-7">
-            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 shadow-xl">
-                <h2 class="heading-font text-sm sm:text-base font-extrabold text-center text-white mb-3">
-                    ⚖️ <span class="text-amber-400">Dual Advantage</span> — Husband Aur Wife Dono Ke Liye Brahmastra!
-                </h2>
-                <div class="grid grid-cols-1 gap-3 text-xs">
-                    <!-- Shield for Men/Husbands -->
-                    <div class="bg-slate-950 border border-blue-500/40 rounded-xl p-3.5">
-                        <p class="font-extrabold text-blue-400 text-xs sm:text-sm mb-1.5 flex items-center space-x-1.5">
-                            <i class="fa-solid fa-shield-halved"></i>
-                            <span>🛡️ Shield For Men / Husbands (Pati Paksh):</span>
-                        </p>
-                        <ul class="space-y-1.5 text-[11px] text-slate-300 leading-relaxed">
-                            <li>✔️ <strong>Jhoote 498A, DV & 2X-3X Fake Maintenance</strong> claims se turant bachav aur Zero/Minimum Maintenance ke Supreme Court citations.</li>
-                            <li>✔️ <strong>Rajnesh vs Neha Affidavit Traps:</strong> Wife ki chhupi hui qualification, job, bank statements aur UPI income ko court record par laane ka pakka format.</li>
-                            <li>✔️ <strong>Perjury Counter-Strike:</strong> Jhoota affidavit dene par opposite party par ulta criminal case (7 saal tak saza ka darr) bana kar turant settlement ke liye majboor karna.</li>
-                        </ul>
-                    </div>
-
-                    <!-- Sword for Women/Wives -->
-                    <div class="bg-slate-950 border border-pink-500/40 rounded-xl p-3.5">
-                        <p class="font-extrabold text-pink-400 text-xs sm:text-sm mb-1.5 flex items-center space-x-1.5">
-                            <i class="fa-solid fa-gavel"></i>
-                            <span>⚔️ Sword For Women / Wives (Patni Paksh):</span>
-                        </p>
-                        <ul class="space-y-1.5 text-[11px] text-slate-300 leading-relaxed">
-                            <li>✔️ <strong>Pati Ki Chhupi Hui Income & Properties Expose Karna:</strong> PAN-linked accounts, GST, ITR aur family business ka sach court order se bahar nikalwana.</li>
-                            <li>✔️ <strong>60 Din Mein Interim Maintenance (अंतरिम खर्चा):</strong> Tareekh khichne se rokna aur Supreme Court mandate se 2X haq ka maintenance order karwana.</li>
-                            <li>✔️ <strong>Strict Recovery & Salary Attachment:</strong> Maintenance baki rakhne par seedha Salary/Account Freeze aur Warrant nikalwane ka ready draft.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 6. EXPANDED COURSE MODULES & 3 FREE BONUSES (VALUE ₹4,999 -> TODAY FREE) -->
-        <section class="bg-slate-900 border border-slate-700 rounded-2xl p-4 mb-7 shadow-2xl">
-            <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-3.5">
-                <h3 class="heading-font text-base font-extrabold text-white flex items-center space-x-2">
-                    <i class="fa-solid fa-folder-open text-amber-400"></i>
-                    <span>Course Ke Andar Kya Covered Hai:</span>
-                </h3>
-                <span class="bg-purple-600/30 border border-purple-500 text-purple-300 text-[10px] font-bold px-2.5 py-0.5 rounded-full">4 Modules + 3 Bonuses</span>
-            </div>
-
-            <div class="space-y-3 text-xs text-slate-300 mb-5">
-                <!-- Module 1 -->
-                <div class="bg-slate-950/90 p-3.5 rounded-xl border border-amber-500/30">
-                    <div class="flex items-center justify-between mb-1">
-                        <p class="font-bold text-amber-400 text-xs sm:text-sm">📌 Module 1: Fast-Track Proceeding & Adjournment Blocker Hacks</p>
-                    </div>
-                    <p class="text-[11px] leading-relaxed text-slate-300">Section 21B HMA & High Court Time-Bound Directions ka istemal karke opposite party ke bahane (Adjournments) band karwana aur 2-3 dates mein decisive hearing karwana.</p>
-                </div>
-
-                <!-- Module 2 -->
-                <div class="bg-slate-950/90 p-3.5 rounded-xl border border-emerald-500/30">
-                    <div class="flex items-center justify-between mb-1">
-                        <p class="font-bold text-emerald-400 text-xs sm:text-sm">📌 Module 2: Secret Asset & Income Unmasking Formula</p>
-                    </div>
-                    <p class="text-[11px] leading-relaxed text-slate-300">9-Point Bank, ITR, GST, CIBIL & UPI Trail Check! Section 91 CrPC (94 BNSS) ke tahat court ke maadhyam se saamne wale ka poora kacha-chitha mangwane ka legal format.</p>
-                </div>
-
-                <!-- Module 3 -->
-                <div class="bg-slate-950/90 p-3.5 rounded-xl border border-purple-500/30">
-                    <div class="flex items-center justify-between mb-1">
-                        <p class="font-bold text-purple-400 text-xs sm:text-sm">📌 Module 3: Cross-Examination (Jirah) Ke 35 Brahmastra Sawaal</p>
-                    </div>
-                    <p class="text-[11px] leading-relaxed text-slate-300">Gawah aur opposite party se katghare mein puche jane wale wo 35 exact sawaal jisse unka jhoot 10 minute ke andar court record par pakda jata hai.</p>
-                </div>
-
-                <!-- Module 4 -->
-                <div class="bg-slate-950/90 p-3.5 rounded-xl border border-blue-500/30">
-                    <div class="flex items-center justify-between mb-1">
-                        <p class="font-bold text-blue-400 text-xs sm:text-sm">📌 Module 4: Out-of-Court Mutual Settlement & Permanent Quashing Blueprint</p>
-                    </div>
-                    <p class="text-[11px] leading-relaxed text-slate-300">Apni sharto par समझौता (MoU Draft) kaise banayein aur High Court se saare FIR/Cases hamesha ke liye Quash (Khatam) kaise karwayein taaki bhavishya mein dobara case na khule.</p>
-                </div>
-
-                <!-- 3 Free Bonuses -->
-                <div class="bg-gradient-to-r from-amber-950/60 via-slate-900 to-amber-950/60 p-3.5 rounded-xl border-2 border-dashed border-amber-400/70">
-                    <p class="font-extrabold text-amber-300 text-xs sm:text-sm mb-2 flex items-center justify-between">
-                        <span>🎁 3 FREE BONUSES INCLUDED:</span>
-                        <span class="bg-amber-400 text-slate-950 text-[10px] font-black px-2 py-0.5 rounded">Value ₹4,999 → FREE</span>
-                    </p>
-                    <ul class="space-y-1.5 text-[11px] text-slate-200">
-                        <li>✨ <strong>Bonus #1:</strong> 15+ Ready-to-Use Court Application Formats (Word/PDF) — Bas Naam Bharein Aur File Karein.</li>
-                        <li>✨ <strong>Bonus #2:</strong> Supreme Court Landmark Judgments Cheat-Sheet (Maintenance, 498A, DV & Divorce).</li>
-                        <li>✨ <strong>Bonus #3:</strong> e-Courts Case Status & Daily Order Decoding Guide (Khud Apne Case Ki Monitoring Karein).</li>
-                    </ul>
-                </div>
-            </div>
-
-            <button onclick="openPaymentModal('Course Blueprint + 3 Bonuses - ₹399')" class="w-full bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-extrabold text-xs sm:text-sm py-3.5 px-4 rounded-xl shadow-lg flex items-center justify-center space-x-2">
-                <i class="fa-solid fa-download"></i>
-                <span>DOWNLOAD COMPLETE MODULES (₹399)</span>
-            </button>
-        </section>
-
-        <!-- 7. COMPARISON TABLE: AAM VAKEEL VS ₹399 FAST-TRACK BLUEPRINT -->
-        <section class="mb-7">
-            <div class="bg-slate-900 border border-purple-500/40 rounded-2xl p-4 shadow-xl">
-                <h3 class="heading-font text-sm sm:text-base font-extrabold text-center text-white mb-1">
-                    📊 Khud Compare Karein: Paisa Aur Waqt Kahan Bach Raha Hai?
-                </h3>
-                <p class="text-[11px] text-slate-400 text-center mb-3">Ek samajhdar faisla aapke saalon ki pareshani khatam kar sakta hai</p>
-
-                <div class="overflow-hidden rounded-xl border border-slate-800 text-[11px]">
-                    <div class="grid grid-cols-2 bg-slate-950 font-extrabold border-b border-slate-800">
-                        <div class="p-2.5 text-red-400 border-r border-slate-800">
-                            ❌ Aam Vakeel Ki Tareekhein (₹50,000+ Kharcha)
-                        </div>
-                        <div class="p-2.5 text-emerald-400">
-                            ✅ ₹399 Fast-Track Blueprint
+    <!-- Main Navigation Header -->
+    <header class="sticky top-0 z-40 bg-navy-900/95 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo & Brand -->
+                <a href="#home" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-gold-400 to-gold-700 p-0.5 shadow-lg group-hover:scale-105 transition-transform">
+                        <div class="w-full h-full bg-navy-950 rounded-[7px] flex items-center justify-center">
+                            <i data-lucide="scale" class="w-6 h-6 text-gold-400"></i>
                         </div>
                     </div>
-                    <div class="grid grid-cols-2 border-b border-slate-800 bg-slate-900/60">
-                        <div class="p-2.5 text-slate-300 border-r border-slate-800">Har tareekh par ₹3,000–₹5,000 fees aur 3-5 saal ka lamba intezar.</div>
-                        <div class="p-2.5 text-slate-100 font-medium">Sirf ₹399 one-time aur 2-3 dates mein decisive legal action.</div>
-                    </div>
-                    <div class="grid grid-cols-2 border-b border-slate-800 bg-slate-900/30">
-                        <div class="p-2.5 text-slate-300 border-r border-slate-800">Oral arguments jinhe Judge sahab aksar record par nahi lete.</div>
-                        <div class="p-2.5 text-slate-100 font-medium">15+ Written Applications jin par Judge ko speaking order dena hi padta hai.</div>
-                    </div>
-                    <div class="grid grid-cols-2 bg-slate-900/60">
-                        <div class="p-2.5 text-slate-300 border-r border-slate-800">Jhoota affidavit dene par bhi saamne wali party aaram se ghoomti hai.</div>
-                        <div class="p-2.5 text-slate-100 font-medium">Sec 340 CrPC / 379 BNSS & Income Unmasking se turant backfoot par!</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 8. NEW DEDICATED SECTION: VIP 1-ON-1 LEGAL STRATEGY CONSULTANCY (SAME PRICE @ SIRF ₹399!) -->
-        <section id="consultancySection" class="mb-7 relative">
-            <div class="shimmer-border border-2 border-amber-400 rounded-3xl p-5 shadow-2xl relative overflow-hidden">
-                <!-- Top Badge -->
-                <div class="bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-500 text-slate-950 font-black text-[10px] sm:text-xs px-3 py-1 rounded-full inline-flex items-center space-x-1.5 uppercase tracking-wider mb-3 shadow-md">
-                    <i class="fa-solid fa-user-tie"></i>
-                    <span>VIP 1-on-1 Legal Strategy Consultancy (Same Price @ Sirf ₹399!)</span>
-                </div>
-
-                <h2 class="heading-font text-xl sm:text-2xl font-black text-white leading-snug mb-2">
-                    Apne Case Ki File Humein Dikhayein Aur <span class="text-amber-400">Sahi Kanooni Raasta Janein!</span>
-                </h2>
-
-                <p class="text-xs text-slate-200 leading-relaxed mb-4">
-                    Jo log sirf PDF nahi balki apne case par <strong>Senior Legal Expert se 1-on-1 Personal Case Strategy & Next Date Action Plan</strong> chahte hain, wo bhi aaj sirf <span class="text-amber-400 font-extrabold underline">₹399</span> mein apni Consultation Slot book kar sakte hain <strong>(+ Course PDF & 15 Drafts FREE!)</strong>.
-                </p>
-
-                <!-- Features Included in ₹399 Consultancy -->
-                <div class="bg-slate-950/90 border border-amber-500/40 rounded-2xl p-3.5 mb-4 text-left space-y-2.5">
-                    <p class="text-xs font-extrabold text-amber-300 border-b border-slate-800 pb-1.5">
-                        🎯 ₹399 Ki 1-on-1 Consultancy Mein Kya Shamil Hai:
-                    </p>
-                    <div class="flex items-start space-x-2.5 text-[11px] sm:text-xs text-slate-200">
-                        <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5 shrink-0"></i>
-                        <span><strong>1-on-1 Telephonic / Audio Strategy Session:</strong> Senior Legal Strategy Expert ke saath aapke case par seedhi aur spasht baat-cheet.</span>
-                    </div>
-                    <div class="flex items-start space-x-2.5 text-[11px] sm:text-xs text-slate-200">
-                        <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5 shrink-0"></i>
-                        <span><strong>Case File & Petition Defect Review:</strong> Opposite party ki petition aur affidavit mein chhupe kanooni loopholes ki pehchan.</span>
-                    </div>
-                    <div class="flex items-start space-x-2.5 text-[11px] sm:text-xs text-slate-200">
-                        <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5 shrink-0"></i>
-                        <span><strong>Agli Tareekh Par Kya Bolna Hai (Exact Script):</strong> Courtroom mein Judge sahab ke samne bolne aur application lagane ka poora roadmap.</span>
-                    </div>
-                    <div class="flex items-start space-x-2.5 text-[11px] sm:text-xs text-slate-200">
-                        <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5 shrink-0"></i>
-                        <span><strong>+ Full Blueprint PDF & 15 Drafts FREE:</strong> Consultancy book karne par aapko ₹399 wala poora Course Blueprint aur 15+ Drafts bilkul muft milenge!</span>
-                    </div>
-                </div>
-
-                <!-- Value Comparison Strip -->
-                <div class="bg-slate-900/90 border border-slate-700 rounded-2xl p-3 mb-4 flex items-center justify-between">
-                    <div class="text-left">
-                        <span class="text-[10px] text-slate-400 uppercase font-bold block">1-on-1 Consultation + PDF Combo</span>
-                        <div class="flex items-center space-x-2">
-                            <span class="text-slate-500 line-through text-base font-bold">₹2,499</span>
-                            <span class="text-2xl font-black text-amber-400">₹399 Only</span>
-                        </div>
-                    </div>
-                    <div class="text-right">
-                        <span class="bg-emerald-500/20 border border-emerald-500 text-emerald-300 text-[10px] font-extrabold px-2.5 py-1 rounded-lg block">
-                            ⚡ Same Price Offer
+                    <div>
+                        <span class="font-cinzel text-xl sm:text-2xl font-bold tracking-wider text-slate-100 block group-hover:text-gold-400 transition-colors">
+                            ADVOCATE VIKAS YADAV
+                        </span>
+                        <span class="text-xs tracking-widest text-gold-400 font-medium uppercase block">
+                            District & Sessions Court, Etawah (U.P.)
                         </span>
                     </div>
-                </div>
-
-                <!-- Dedicated Consultancy CTA Button -->
-                <button onclick="openPaymentModal('1-on-1 Legal Consultancy + Free PDF - ₹399')" class="pulse-amber w-full bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-500 active:scale-95 text-slate-950 font-black text-xs sm:text-sm py-4 px-4 rounded-xl shadow-2xl flex items-center justify-center space-x-2">
-                    <i class="fa-solid fa-headset text-base"></i>
-                    <span>BOOK 1-ON-1 CONSULTANCY + FREE PDF @ ₹399</span>
-                </button>
-            </div>
-        </section>
-
-        <!-- 9. VERIFIED BUYER REVIEWS / TESTIMONIALS (3 REALISTIC HINGLISH REVIEWS) -->
-        <section class="mb-7">
-            <h3 class="heading-font text-base sm:text-lg font-extrabold text-center text-white mb-1">
-                ⭐ Verified Buyers & Clients Ka Anubhav
-            </h3>
-            <p class="text-[11px] text-slate-400 text-center mb-4">Hazaaron Logon Ne Apना Case Fast-Track Kiya Aur Lakhon Bachaye</p>
-
-            <div class="space-y-3">
-                <!-- Review 1 -->
-                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-3.5 shadow-lg">
-                    <div class="flex items-center justify-between mb-1.5">
-                        <div class="flex items-center space-x-2">
-                            <div class="w-8 h-8 rounded-full bg-purple-600 flex items-center justify-center font-bold text-xs text-white">RV</div>
-                            <div>
-                                <p class="text-xs font-bold text-white">Rajeev Verma <span class="text-[10px] text-emerald-400 font-normal">✔ Verified Buyer</span></p>
-                                <p class="text-[10px] text-slate-400">Delhi • Husband Side (498A & 125 CrPC)</p>
-                            </div>
-                        </div>
-                        <span class="text-amber-400 text-xs">★★★★★</span>
-                    </div>
-                    <p class="text-[11px] text-slate-300 leading-relaxed">
-                        "Mera case 3 saal se chal raha tha aur vakeel har date pe ₹4,500 le leta tha. Is ₹399 ke blueprint se maine Adjournment Blocker aur Perjury format apne vakeel ko dekar file karwaya. Sirf 2 court dates mein saamne wali party ne bina ek rupaya liye mutual divorce sign kar liya!"
-                    </p>
-                </div>
-
-                <!-- Review 2 -->
-                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-3.5 shadow-lg">
-                    <div class="flex items-center justify-between mb-1.5">
-                        <div class="flex items-center space-x-2">
-                            <div class="w-8 h-8 rounded-full bg-pink-600 flex items-center justify-center font-bold text-xs text-white">SS</div>
-                            <div>
-                                <p class="text-xs font-bold text-white">Sunita Sharma <span class="text-[10px] text-emerald-400 font-normal">✔ Verified Buyer</span></p>
-                                <p class="text-[10px] text-slate-400">Lucknow • Wife Side (2X Maintenance Order)</p>
-                            </div>
-                        </div>
-                        <span class="text-amber-400 text-xs">★★★★★</span>
-                    </div>
-                    <p class="text-[11px] text-slate-300 leading-relaxed">
-                        "Mere pati court mein apni salary sirf ₹15,000 dikha rahe the jabki unka bada kaam hai. Module 2 ke 9-Point Bank, ITR & UPI Trail format se court ne unke chhupe hue bank खाते mangwa liye aur 60 din mein mera ₹35,000/month interim maintenance order ho gaya!"
-                    </p>
-                </div>
-
-                <!-- Review 3 -->
-                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-3.5 shadow-lg">
-                    <div class="flex items-center justify-between mb-1.5">
-                        <div class="flex items-center space-x-2">
-                            <div class="w-8 h-8 rounded-full bg-amber-600 flex items-center justify-center font-bold text-xs text-white">MP</div>
-                            <div>
-                                <p class="text-xs font-bold text-white">Manish Tiwari <span class="text-[10px] text-emerald-400 font-normal">✔ Verified Buyer</span></p>
-                                <p class="text-[10px] text-slate-400">Jaipur • 1-on-1 Consultancy + Blueprint</p>
-                            </div>
-                        </div>
-                        <span class="text-amber-400 text-xs">★★★★★</span>
-                    </div>
-                    <p class="text-[11px] text-slate-300 leading-relaxed">
-                        "Maine ₹399 mein 1-on-1 Consultancy aur PDF liya. Senior expert ne meri file ki galtiyan batayi aur agli date ki exact script samjhayi. Cross-examination ke 35 sawaalon ne poora case meri taraf mod diya. ₹399 iske samne kuch bhi nahi hai."
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 10. MAIN PRICE OFFER CARD & INSTANT POST-PAYMENT UTR ACCESS SECTION -->
-        <section class="bg-gradient-to-r from-purple-950 via-slate-900 to-purple-950 border-2 border-purple-500 rounded-3xl p-5 text-center mb-6 shadow-2xl relative">
-            <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-purple-600 text-white font-black text-[10px] px-3 py-0.5 rounded-full uppercase tracking-widest shadow">
-                Instant Access Offer
-            </span>
-            <p class="text-slate-400 text-[10px] mt-1 mb-1 uppercase font-semibold">Course Blueprint / 1-on-1 Consultancy Price Today</p>
-            <div class="flex items-center justify-center space-x-2.5 mb-4">
-                <span class="text-slate-500 line-through text-xl font-bold">₹1,999</span>
-                <span class="text-4xl font-black text-emerald-400">₹399</span>
-                <span class="bg-emerald-500/20 text-emerald-400 border border-emerald-500 text-[10px] font-bold px-2 py-0.5 rounded">80% OFF</span>
-            </div>
-            <button onclick="openPaymentModal('Course Blueprint + 1-on-1 Consultancy Offer - ₹399')" class="pulse-btn w-full bg-purple-600 hover:bg-purple-500 text-white font-extrabold text-base py-3.5 px-4 rounded-xl shadow-2xl flex items-center justify-center space-x-2 mb-2.5">
-                <i class="fa-solid fa-lock"></i>
-                <span>PAY ₹399 WITH UPI NOW</span>
-            </button>
-            <p class="text-[10px] text-slate-400">100% Secure UPI Payment • Instant Verification</p>
-        </section>
-
-        <!-- POST-PAYMENT ACCESS BOX WITH 12-DIGIT UPI UTR VERIFICATION -->
-        <section id="downloadSection" class="bg-emerald-950/80 border-2 border-emerald-500 rounded-2xl p-4 mb-7 shadow-2xl text-center">
-            <div class="w-10 h-10 bg-emerald-500 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-2 shadow-md">
-                <i class="fa-solid fa-key"></i>
-            </div>
-            <h3 class="text-base font-bold text-emerald-400 mb-1">Payment Done? Verify UTR & Unlock Access</h3>
-            <p class="text-xs text-slate-300 mb-3">
-                ₹399 UPI Payment karne ke baad apna <strong>12-Digit UPI UTR / Reference Number</strong> neeche dalein. Verify hote hi PDF Download aur Consultancy Slot turant unlock ho jayega:
-            </p>
-
-            <!-- 12-Digit UTR Input Form -->
-            <div class="space-y-2.5 text-left mb-3">
-                <div>
-                    <label for="utrInput" class="block text-[11px] font-bold text-emerald-300 mb-1">
-                        Enter 12-Digit UPI UTR / Ref No. <span class="text-red-400">*</span>
-                    </label>
-                    <input id="utrInput" type="text" maxlength="12" inputmode="numeric" placeholder="Example: 412389012345" class="w-full bg-slate-900 border border-emerald-500/60 focus:border-amber-400 rounded-xl px-3.5 py-2.5 text-xs text-white font-mono placeholder-slate-500 outline-none">
-                </div>
-                <div>
-                    <label for="slotMobileInput" class="block text-[11px] font-bold text-slate-300 mb-1">
-                        Your Mobile Number (Optional - For 1-on-1 Consultancy Call Slot)
-                    </label>
-                    <input id="slotMobileInput" type="tel" maxlength="10" inputmode="numeric" placeholder="Enter 10-digit mobile number for call" class="w-full bg-slate-900 border border-slate-700 focus:border-purple-400 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder-slate-500 outline-none">
-                </div>
-            </div>
-
-            <p id="utrErrorMsg" class="text-[11px] text-red-400 font-bold mb-2.5 hidden">
-                ⚠️ Kripya Sahi 12-Digit Numeric UPI UTR / Reference Number Darj Karein!
-            </p>
-
-            <button onclick="verifyUtrAndUnlock()" class="w-full bg-emerald-600 hover:bg-emerald-500 active:scale-95 text-white font-extrabold text-xs sm:text-sm py-3.5 px-4 rounded-xl shadow-xl flex items-center justify-center space-x-2 transition">
-                <i class="fa-solid fa-circle-check"></i>
-                <span>VERIFY 12-DIGIT UTR & UNLOCK NOW</span>
-            </button>
-
-            <!-- Hidden Unlocked Box (Revealed After Valid 12-Digit UTR Verification) -->
-            <div id="unlockedDownloadBox" class="hidden mt-4 pt-3.5 border-t border-emerald-500/40 space-y-2.5">
-                <div class="bg-emerald-900/50 border border-emerald-400 rounded-xl p-2.5 text-xs text-emerald-200 font-semibold">
-                    ✅ UTR Verified Successfully! Aapka Course PDF Unlock Ho Gaya Hai Aur 1-on-1 Consultancy Slot Register Kar Liya Gaya Hai.
-                </div>
-                <a id="pdfDownloadBtn" href="YOUR_GOOGLE_DRIVE_PDF_LINK_HERE" target="_blank" class="pulse-btn block w-full bg-gradient-to-r from-amber-500 to-yellow-400 text-slate-950 font-black text-xs sm:text-sm py-3.5 px-4 rounded-xl shadow-xl">
-                    📥 DOWNLOAD COURSE PDF & 15+ DRAFTS NOW
                 </a>
-            </div>
-        </section>
 
-        <!-- 11. INTERACTIVE PERSUASIVE FAQS (7 ACCORDION QUESTIONS) -->
-        <section id="faqSection" class="mb-8">
-            <div class="text-center mb-4">
-                <span class="bg-purple-900/50 border border-purple-500/50 text-purple-300 text-[10px] font-bold px-3 py-0.5 rounded-full uppercase">
-                    Doubts Clear Karein
-                </span>
-                <h3 class="heading-font text-lg font-extrabold text-white mt-1.5">
-                    ❓ Aksar Puche Jane Wale Sawal (FAQs)
-                </h3>
-            </div>
-
-            <div class="space-y-2.5">
-                <!-- FAQ 1 -->
-                <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden">
-                    <button onclick="toggleFaq(0)" class="w-full text-left p-3.5 flex items-center justify-between font-bold text-xs sm:text-sm text-amber-300">
-                        <span>1. Mera vakeel pehle se hai to main ye ₹399 ka Blueprint kyun loon?</span>
-                        <i id="faqIcon-0" class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300 rotate-180"></i>
-                    </button>
-                    <div id="faqBody-0" class="px-3.5 pb-3.5 text-xs text-slate-300 leading-relaxed">
-                        Kyunki vakeel ki kamai aapki "Tareekhon" se hoti hai, case jaldi khatam karne se nahi! Is Blueprint mein wo secret Time-Bound Applications, Perjury formats aur Cross-Examination ke 35 Brahmastra sawaal hain jo aap apne vakeel ko dekar agli hi date par file karwa sakte hain aur saalon ka case 2-3 dates mein palat sakte hain.
+                <!-- Desktop Menu -->
+                <nav class="hidden lg:flex items-center space-x-6">
+                    <a href="#home" class="text-slate-300 hover:text-gold-400 font-medium text-sm transition-colors py-2">होम (Home)</a>
+                    
+                    <!-- Practice Areas Dropdown -->
+                    <div class="relative group">
+                        <button class="flex items-center gap-1.5 text-slate-300 group-hover:text-gold-400 font-medium text-sm transition-colors py-2">
+                            <span>विधिक सेवाएं ( Legal Areas)</span>
+                            <i data-lucide="chevron-down" class="w-4 h-4 transition-transform group-hover:rotate-180"></i>
+                        </button>
+                        
+                        <!-- Mega Menu Panel -->
+                        <div class="absolute left-1/2 -translate-x-1/2 mt-2 w-[720px] bg-navy-900 border border-slate-700/80 rounded-xl shadow-2xl p-6 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-200 z-50">
+                            <div class="grid grid-cols-3 gap-6">
+                                <div>
+                                    <div class="text-xs uppercase tracking-wider text-gold-400 font-bold mb-3 pb-1 border-b border-slate-800 flex items-center gap-1.5">
+                                        <i data-lucide="shield-alert" class="w-3.5 h-3.5"></i> क्रिमिनल व बेल
+                                    </div>
+                                    <ul class="space-y-2 text-xs">
+                                        <li><a href="#bail-applications" class="hover:text-gold-400 text-slate-300 block">1. Bail (Regular/Anticipatory)</a></li>
+                                        <li><a href="#remand-habeas-corpus" class="hover:text-gold-400 text-slate-300 block">2. Remand & Habeas Corpus</a></li>
+                                        <li><a href="#ndps-act" class="hover:text-gold-400 text-slate-300 block">3. NDPS Act Cases</a></li>
+                                        <li><a href="#pocso-act" class="hover:text-gold-400 text-slate-300 block">4. POCSO Act Matters</a></li>
+                                        <li><a href="#crimes-against-women" class="hover:text-gold-400 text-slate-300 block">5. 498A / 304B / 376</a></li>
+                                        <li><a href="#murder-attempt" class="hover:text-gold-400 text-slate-300 block">6. Murder & Attempt (302/307)</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="text-xs uppercase tracking-wider text-gold-400 font-bold mb-3 pb-1 border-b border-slate-800 flex items-center gap-1.5">
+                                        <i data-lucide="scale" class="w-3.5 h-3.5"></i> विशेष व साइबर
+                                    </div>
+                                    <ul class="space-y-2 text-xs">
+                                        <li><a href="#sc-st-act" class="hover:text-gold-400 text-slate-300 block">7. SC/ST Act Defense</a></li>
+                                        <li><a href="#juvenile-justice" class="hover:text-gold-400 text-slate-300 block">8. Juvenile Justice (JJB)</a></li>
+                                        <li><a href="#economic-cyber-crime" class="hover:text-gold-400 text-slate-300 block">9. Cyber & Fraud (420)</a></li>
+                                        <li><a href="#maintenance-125" class="hover:text-gold-400 text-slate-300 block">10. Maintenance (125 CrPC)</a></li>
+                                        <li><a href="#domestic-violence" class="hover:text-gold-400 text-slate-300 block">11. Domestic Violence (DV)</a></li>
+                                        <li><a href="#divorce-custody" class="hover:text-gold-400 text-slate-300 block">12. Divorce & Custody</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="text-xs uppercase tracking-wider text-gold-400 font-bold mb-3 pb-1 border-b border-slate-800 flex items-center gap-1.5">
+                                        <i data-lucide="building" class="w-3.5 h-3.5"></i> सिविल, संपत्ति व क्लेम
+                                    </div>
+                                    <ul class="space-y-2 text-xs">
+                                        <li><a href="#cheque-bounce-138" class="hover:text-gold-400 text-slate-300 block">13. Cheque Bounce (138 NI)</a></li>
+                                        <li><a href="#execution-petitions" class="hover:text-gold-400 text-slate-300 block">14. Execution (Order 21 CPC)</a></li>
+                                        <li><a href="#mact-accident" class="hover:text-gold-400 text-slate-300 block">15. Motor Accident Claim (MACT)</a></li>
+                                        <li><a href="#rent-eviction" class="hover:text-gold-400 text-slate-300 block">16. Rent Control & Eviction</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <!-- FAQ 2 -->
-                <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden">
-                    <button onclick="toggleFaq(1)" class="w-full text-left p-3.5 flex items-center justify-between font-bold text-xs sm:text-sm text-amber-300">
-                        <span>2. Kya ye Blueprint Husband aur Wife dono ke kaam aayega?</span>
-                        <i id="faqIcon-1" class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+                    <!-- Search trigger -->
+                    <button onclick="openSearchModal()" class="flex items-center gap-2 text-slate-400 hover:text-white bg-slate-800/80 border border-slate-700 px-3 py-1.5 rounded-lg text-xs transition-colors">
+                        <i data-lucide="search" class="w-3.5 h-3.5"></i>
+                        <span>सर्च केस/टॉपिक...</span>
+                        <kbd class="bg-navy-950 px-1.5 py-0.5 rounded text-[10px] text-slate-500 font-mono">⌘K</kbd>
                     </button>
-                    <div id="faqBody-1" class="hidden px-3.5 pb-3.5 text-xs text-slate-300 leading-relaxed">
-                        Haan, 100%! Isme Husband Side ke liye Jhoote 498A, DV aur Fake Maintenance se bachav ka "Shield Formula" hai, aur Wife Side ke liye Pati ki chhupi hui income/property expose karke 60 din mein 2X Interim Maintenance order karwane ka "Sword Formula" diya gaya hai.
-                    </div>
-                </div>
 
-                <!-- FAQ 3 -->
-                <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden">
-                    <button onclick="toggleFaq(2)" class="w-full text-left p-3.5 flex items-center justify-between font-bold text-xs sm:text-sm text-amber-300">
-                        <span>3. ₹399 wali 1-on-1 Legal Consultancy kaise hogi?</span>
-                        <i id="faqIcon-2" class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+                    <button onclick="openBookingModal()" class="bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-400 hover:to-gold-500 text-navy-950 font-semibold px-4 py-2 rounded-lg text-sm shadow-md transition-all flex items-center gap-2">
+                        <i data-lucide="calendar" class="w-4 h-4"></i>
+                        <span>परामर्श बुक करें</span>
                     </button>
-                    <div id="faqBody-2" class="hidden px-3.5 pb-3.5 text-xs text-slate-300 leading-relaxed">
-                        Bahut aasan hai! Aap ₹399 UPI payment karne ke baad upar diye gaye Verification Box mein apna 12-Digit UTR Number aur Mobile Number darj karenge. Aapka Consultancy Slot turant confirm ho jayega, Free Course PDF wahin unlock ho jayega, aur hamare Senior Legal Expert aapse 1-on-1 Audio/Telephonic session par aapke case ki strategy discuss karenge.
-                    </div>
-                </div>
+                </nav>
 
-                <!-- FAQ 4 -->
-                <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden">
-                    <button onclick="toggleFaq(3)" class="w-full text-left p-3.5 flex items-center justify-between font-bold text-xs sm:text-sm text-amber-300">
-                        <span>4. Kya ye Naye Kanoon (BNS / BNSS 2026) ke hisab se updated hai?</span>
-                        <i id="faqIcon-3" class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+                <!-- Mobile Menu & Search Buttons -->
+                <div class="flex items-center gap-2 lg:hidden">
+                    <button onclick="openSearchModal()" class="p-2 text-slate-300 hover:text-white">
+                        <i data-lucide="search" class="w-5 h-5"></i>
                     </button>
-                    <div id="faqBody-3" class="hidden px-3.5 pb-3.5 text-xs text-slate-300 leading-relaxed">
-                        Bilkul! Ye Updated 2026 Edition hai. Chahe aapka case purane CrPC/IPC (125 CrPC, 340 CrPC, 498A IPC) mein chal raha ho ya naye BNSS/BNS (144 BNSS, 379 BNSS, 85 BNS) aur Hindu Marriage Act mein—dono ke exact sections aur Supreme Court judgments isme shamil hain.
-                    </div>
-                </div>
-
-                <!-- FAQ 5 -->
-                <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden">
-                    <button onclick="toggleFaq(4)" class="w-full text-left p-3.5 flex items-center justify-between font-bold text-xs sm:text-sm text-amber-300">
-                        <span>5. Kya meri Privacy aur Case Details 100% safe rahengi?</span>
-                        <i id="faqIcon-4" class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+                    <button onclick="toggleMobileMenu()" id="mobileMenuBtn" class="p-2 text-slate-300 hover:text-white focus:outline-none">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
                     </button>
-                    <div id="faqBody-4" class="hidden px-3.5 pb-3.5 text-xs text-slate-300 leading-relaxed">
-                        100% Guaranteed! Aapki pehchan, payment aur case se judi har baat poori tarah Gopniya (Confidential) rakhi jaati hai. Kisi bhi third-party ya opposite party ko kabhi pata nahi chalega.
-                    </div>
-                </div>
-
-                <!-- FAQ 6 -->
-                <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden">
-                    <button onclick="toggleFaq(5)" class="w-full text-left p-3.5 flex items-center justify-between font-bold text-xs sm:text-sm text-amber-300">
-                        <span>6. Payment karne ke baad PDF aur 15+ Drafts kaise milenge?</span>
-                        <i id="faqIcon-5" class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"></i>
-                    </button>
-                    <div id="faqBody-5" class="hidden px-3.5 pb-3.5 text-xs text-slate-300 leading-relaxed">
-                        Jaise hi aap kisi bhi UPI App (GPay, PhonePe, Paytm) se ₹399 pay karke apna 12-Digit UTR number upar verify karenge, usi second screen par Direct Download Button khul jayega jahan se aap poora Course PDF aur 15+ Editable Drafts apne phone mein save kar sakte hain.
-                    </div>
-                </div>
-
-                <!-- FAQ 7 -->
-                <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden">
-                    <button onclick="toggleFaq(6)" class="w-full text-left p-3.5 flex items-center justify-between font-bold text-xs sm:text-sm text-amber-300">
-                        <span>7. Kya isko samajhne ke liye kanooni padhai (LLB) zaroori hai?</span>
-                        <i id="faqIcon-6" class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"></i>
-                    </button>
-                    <div id="faqBody-6" class="hidden px-3.5 pb-3.5 text-xs text-slate-300 leading-relaxed">
-                        Bilkul nahi! Poora course aasan bol-chal ki Hindi / Hinglish mein banaya gaya hai taaki koi bhi vyakti bina kisi kanooni degree ke 30 minute mein padh kar apne case ka poora control apne haath mein le sake.
-                    </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- SUBTLE MINIMALIST FOOTER (ZERO VISIBLE PHONE/EMAIL/WHATSAPP ON MAIN SCREEN) -->
-        <footer class="border-t border-slate-800/80 pt-6 pb-4 text-center text-[11px] text-slate-500 space-y-2">
-            <p>© 2026 Legal Fast-Track Consultancy.</p>
-            <div class="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-[10px] text-slate-500">
-                <button onclick="openInfoModal('privacy')" class="hover:text-slate-300 transition">Privacy Policy</button>
-                <span>•</span>
-                <button onclick="openInfoModal('refund')" class="hover:text-slate-300 transition">Refund Policy</button>
-                <span>•</span>
-                <button onclick="openInfoModal('terms')" class="hover:text-slate-300 transition">Terms & Conditions</button>
-                <span>•</span>
-                <button onclick="openInfoModal('contact')" class="hover:text-slate-300 transition">Contact Us</button>
+        <!-- Mobile Menu Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-navy-900 border-b border-slate-800 px-4 pt-2 pb-6 max-h-[75vh] overflow-y-auto">
+            <div class="space-y-1">
+                <a href="#home" onclick="closeMobileMenu()" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-800">होम (Home)</a>
+                <div class="text-xs uppercase font-bold text-gold-400 px-3 pt-3">सभी 16 विधिक विषय:</div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-1 pl-2 text-sm text-slate-300" id="mobileNavItems">
+                    <!-- Populated dynamically via JS -->
+                </div>
+                <div class="pt-4 px-2">
+                    <button onclick="closeMobileMenu(); openBookingModal()" class="w-full bg-gold-500 hover:bg-gold-400 text-navy-950 font-bold py-2.5 rounded-lg text-center">
+                        कचहरी चैंबर परामर्श बुक करें
+                    </button>
+                </div>
             </div>
-        </footer>
-    </div>
+        </div>
+    </header>
 
-    <!-- ===================================================================== -->
-    <!-- 12. UPI PAYMENT MODAL (#paymentModal)                                 -->
-    <!-- ===================================================================== -->
-    <div id="paymentModal" class="fixed inset-0 bg-black/85 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
-        <div class="bg-slate-900 border-2 border-purple-500 rounded-3xl max-w-sm w-full p-5 text-center relative shadow-2xl">
-            <button onclick="closePaymentModal()" class="absolute top-3.5 right-3.5 w-8 h-8 rounded-full bg-slate-800 text-slate-400 hover:text-white flex items-center justify-center">
-                <i class="fa-solid fa-xmark text-lg"></i>
-            </button>
-
-            <span class="inline-block bg-purple-600/20 border border-purple-500/50 text-purple-300 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase mb-1">
-                🔒 Instant UPI Verification
-            </span>
-            <h3 class="heading-font text-lg font-bold text-amber-400 mb-0.5">Scan & Pay ₹399</h3>
-            <p id="modalPlanTitle" class="text-[11px] text-emerald-300 font-semibold mb-1">Course Blueprint - ₹399</p>
-            <p class="text-[11px] text-slate-400 mb-3">Google Pay, PhonePe, Paytm, ya kisi bhi App se Scan Karein</p>
-
-            <!-- Dynamic QR Code (Auto-generated for ₹399) -->
-            <div class="bg-white p-3 rounded-2xl inline-block mb-3 shadow-lg">
-                <img id="qrImage" src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=upi://pay?pa=9410851090-n532@ybl%26pn=VIKAS%20YADAV%26am=399.00%26cu=INR" alt="UPI QR Code" class="w-40 h-40 mx-auto" onerror="this.src='https://placehold.co/180x180/ffffff/0f172a?text=Pay+Rs.399+UPI'">
-            </div>
-
-            <p class="text-[11px] text-slate-400 mb-2">Ya App Se Direct Open Karein:</p>
-            <button onclick="payDirectUPI()" class="pulse-btn w-full bg-purple-600 hover:bg-purple-500 text-white font-bold py-2.5 px-3 rounded-xl text-xs mb-3 flex items-center justify-center space-x-2 shadow-lg">
-                <i class="fa-solid fa-mobile-screen"></i>
-                <span>Open UPI App Direct (₹399)</span>
-            </button>
-
-            <!-- Copy UPI ID Option (Failsafe) -->
-            <div class="bg-slate-800 border border-slate-700 p-2.5 rounded-xl flex items-center justify-between mb-2">
-                <span class="text-xs text-amber-400 font-mono font-bold">9410851090-n532@ybl</span>
-                <button onclick="copyUPI()" class="bg-slate-700 hover:bg-slate-600 text-white text-[10px] px-2.5 py-1 rounded-lg font-bold">
-                    <i class="fa-regular fa-copy"></i> Copy UPI
+    <!-- Quick Search Modal -->
+    <div id="searchModal" class="fixed inset-0 bg-navy-950/80 backdrop-blur-sm z-50 hidden flex items-start justify-center pt-20 px-4">
+        <div class="bg-navy-900 border border-gold-500/30 rounded-2xl max-w-2xl w-full shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-150">
+            <div class="p-4 border-b border-slate-800 flex items-center gap-3">
+                <i data-lucide="search" class="w-5 h-5 text-gold-400"></i>
+                <input type="text" id="quickSearchInput" placeholder="सर्च करें (जैसे: NDPS, Bail, 498A, Divorce, Cheque, MACT, Etawah)..." 
+                    class="w-full bg-transparent border-0 text-white placeholder-slate-500 focus:outline-none text-base"
+                    oninput="handleQuickSearch(this.value)">
+                <button onclick="closeSearchModal()" class="text-slate-400 hover:text-white p-1">
+                    <i data-lucide="x" class="w-5 h-5"></i>
                 </button>
             </div>
-            <p id="copyAlert" class="text-[10px] text-emerald-400 font-semibold mt-1 hidden">✅ UPI ID Copied Successfully!</p>
-
-            <button onclick="goToUtrVerification()" class="w-full mt-2 bg-emerald-950/80 hover:bg-emerald-900 border border-emerald-500/50 text-emerald-300 font-bold text-[11px] py-2 px-3 rounded-xl">
-                Payment Kar Diya? Click Here To Enter 12-Digit UTR →
-            </button>
+            <div id="searchResultsContainer" class="max-h-96 overflow-y-auto p-3 space-y-2 text-sm">
+                <!-- Search results injected here -->
+                <p class="text-slate-500 text-center py-6 text-xs">टाइप करें और इटावा कोर्ट के 16 विषयों में से तुरंत खोजें...</p>
+            </div>
         </div>
     </div>
 
-    <!-- ===================================================================== -->
-    <!-- POPUP MODAL (#infoModal) FOR PRIVACY, REFUND, TERMS & CONTACT US      -->
-    <!-- (ONLY VISIBLE WHEN USER CLICKS THE 4 FOOTER LINKS)                    -->
-    <!-- ===================================================================== -->
-    <div id="infoModal" class="fixed inset-0 bg-black/85 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
-        <div class="bg-slate-900 border-2 border-slate-700 rounded-3xl max-w-md w-full p-5 relative shadow-2xl">
-            <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-3">
-                <h3 id="infoModalTitle" class="heading-font text-sm sm:text-base font-extrabold text-amber-400">
-                    Information
-                </h3>
-                <button onclick="closeInfoModal()" class="w-8 h-8 rounded-full bg-slate-800 text-slate-400 hover:text-white flex items-center justify-center">
-                    <i class="fa-solid fa-xmark text-lg"></i>
-                </button>
-            </div>
-
-            <!-- Modal Switcher Pills inside Popup -->
-            <div class="grid grid-cols-4 gap-1 bg-slate-950 p-1 rounded-xl border border-slate-800 mb-3 text-[10px] font-bold text-center">
-                <button onclick="openInfoModal('privacy')" id="modalTab-privacy" class="py-1.5 px-1 rounded-lg bg-purple-600 text-white truncate">Privacy</button>
-                <button onclick="openInfoModal('refund')" id="modalTab-refund" class="py-1.5 px-1 rounded-lg text-slate-400 hover:text-white truncate">Refund</button>
-                <button onclick="openInfoModal('terms')" id="modalTab-terms" class="py-1.5 px-1 rounded-lg text-slate-400 hover:text-white truncate">Terms</button>
-                <button onclick="openInfoModal('contact')" id="modalTab-contact" class="py-1.5 px-1 rounded-lg text-slate-400 hover:text-white truncate">Contact Us</button>
-            </div>
-
-            <!-- Dynamic Modal Body -->
-            <div id="infoModalBody" class="modal-scroll max-h-[65vh] overflow-y-auto bg-slate-950 border border-slate-800 rounded-2xl p-3.5 text-xs text-slate-300 leading-relaxed space-y-3">
-                <!-- Populated dynamically via JS when footer link is clicked -->
-            </div>
-
-            <button onclick="closeInfoModal()" class="w-full mt-3 bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold text-xs py-2.5 rounded-xl">
-                Close Window
+    <!-- Booking / Chamber Consultation Modal -->
+    <div id="bookingModal" class="fixed inset-0 bg-navy-950/85 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-navy-900 border border-slate-700 rounded-2xl max-w-lg w-full p-6 shadow-2xl relative">
+            <button onclick="closeBookingModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white">
+                <i data-lucide="x" class="w-5 h-5"></i>
             </button>
+            <div class="flex items-center gap-3 mb-4">
+                <div class="p-2.5 rounded-lg bg-gold-500/10 border border-gold-500/20 text-gold-400">
+                    <i data-lucide="scale" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-white font-cinzel">विधिक परामर्श फॉर्म</h3>
+                    <p class="text-xs text-slate-400">एडवोकेट विकास यादव - चैंबर नं. 1, जिला न्यायालय, इटावा</p>
+                </div>
+            </div>
+            <form id="consultationForm" onsubmit="handleConsultationSubmit(event)" class="space-y-4 text-xs">
+                <div>
+                    <label class="block text-slate-300 mb-1 font-medium">आपका नाम (Full Name) *</label>
+                    <input type="text" required class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-white focus:outline-none focus:border-gold-500" placeholder="अपना नाम दर्ज करें">
+                </div>
+                <div>
+                    <label class="block text-slate-300 mb-1 font-medium">मोबाइल नंबर (WhatsApp No.) *</label>
+                    <input type="tel" required class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-white focus:outline-none focus:border-gold-500" placeholder="10 अंकों का मोबाइल नंबर">
+                </div>
+                <div>
+                    <label class="block text-slate-300 mb-1 font-medium">केस का विषय चुनें (Select Practice Area) *</label>
+                    <select id="caseSubjectSelect" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-white focus:outline-none focus:border-gold-500">
+                        <!-- Populated by JS -->
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-slate-300 mb-1 font-medium">केस / समस्या का संक्षिप्त विवरण *</label>
+                    <textarea rows="3" required class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-white focus:outline-none focus:border-gold-500" placeholder="FIR नंबर, थाना, संबंधित व्यक्ति या समस्या संक्षेप में लिखें..."></textarea>
+                </div>
+                <div id="bookingSuccessMsg" class="hidden p-3 bg-emerald-950/60 border border-emerald-500/40 rounded-lg text-emerald-300 text-xs">
+                    धन्यवाद! आपका परामर्श अनुरोध प्राप्त हो गया है। एडवोकेट विकास यादव का कार्यालय आपसे शीघ्र संपर्क करेगा।
+                </div>
+                <div class="flex gap-3 pt-2">
+                    <button type="submit" class="flex-1 bg-gold-500 hover:bg-gold-400 text-navy-950 font-bold py-2.5 rounded-lg text-sm transition-colors">
+                        अनुरोध भेजें
+                    </button>
+                    <a href="https://wa.me/919876543210?text=Namaste%20Advocate%20Vikas%20Yadav%20ji,%20I%20need%20urgent%20legal%20help%20in%20Etawah." target="_blank" class="px-4 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg flex items-center justify-center gap-1.5 transition-colors font-medium">
+                        <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp
+                    </a>
+                </div>
+            </form>
         </div>
     </div>
 
-    <!-- ===================================================================== -->
-    <!-- 13. STICKY BOTTOM FLOATING PAYMENT BAR FOR MOBILE                     -->
-    <!-- ===================================================================== -->
-    <div class="fixed bottom-0 left-0 right-0 bg-slate-900/95 border-t-2 border-purple-500 p-2.5 z-40 backdrop-blur-md shadow-2xl">
-        <div class="max-w-md mx-auto flex items-center justify-between space-x-2">
+    <!-- MAIN DYNAMIC CONTENT CONTAINER (SPA ROUTER TARGET) -->
+    <main id="app" class="flex-grow">
+        <!-- Rendered dynamically by JavaScript based on location.hash -->
+    </main>
+
+    <!-- Global CTA Bottom Bar -->
+    <section class="bg-gradient-to-r from-navy-900 via-slate-900 to-navy-900 border-t border-slate-800 py-10 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
-                <span class="text-[9px] text-amber-400 block uppercase font-bold tracking-wider">Course / Consultancy Offer</span>
-                <div class="flex items-center space-x-1.5">
-                    <span class="text-xl font-black text-emerald-400">₹399</span>
-                    <span class="text-slate-500 line-through text-[10px] font-bold">₹1,999</span>
-                    <span class="bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 text-[9px] font-bold px-1.5 py-0.2 rounded">80% OFF</span>
+                <span class="text-xs font-semibold text-gold-400 uppercase tracking-wider block mb-1">इटावा कचहरी विधिक सहायता</span>
+                <h3 class="text-xl sm:text-2xl font-bold font-cinzel text-white">क्या आप या आपका परिवार किसी पुलिस या कानूनी विवाद में फंसा है?</h3>
+                <p class="text-slate-400 text-sm mt-1">FIR, गैर-जमानती वारंट, या दीवानी वाद में समय पर सही विधिक परामर्श ही आपकी सबसे बड़ी सुरक्षा है।</p>
+            </div>
+            <div class="flex flex-wrap items-center gap-3">
+                <a href="tel:+919876543210" class="bg-gold-500 hover:bg-gold-400 text-navy-950 px-6 py-3 rounded-lg font-bold text-sm flex items-center gap-2 shadow-lg transition-all">
+                    <i data-lucide="phone" class="w-4 h-4"></i> सीधे बात करें (+91 98765 43210)
+                </a>
+                <button onclick="openBookingModal()" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-white px-5 py-3 rounded-lg font-semibold text-sm transition-colors">
+                    चैंबर अप्वाइंटमेंट लें
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-950 border-t border-slate-800 text-slate-400 text-xs py-12 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="space-y-4">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="scale" class="w-6 h-6 text-gold-400"></i>
+                    <span class="font-cinzel text-base font-bold text-white tracking-wider">ADVOCATE VIKAS YADAV</span>
+                </div>
+                <p class="text-slate-400 leading-relaxed">
+                    जिला एवं सत्र न्यायालय इटावा में क्रिमिनल डिफेंस, बेल, एनडीपीएस, वैवाहिक विवाद और सिविल मुकदमों के लिए समर्पित एवं आक्रामक पैरवी।
+                </p>
+                <div class="text-gold-400 font-medium">
+                    चैंबर: कमरा नं. 1, ईदगाह रोड गेट, जिला कचहरी, इटावा (उ.प्र.)
                 </div>
             </div>
-            <button onclick="openPaymentModal('Course Blueprint + Consultancy Offer - ₹399')" class="pulse-btn bg-gradient-to-r from-purple-600 to-fuchsia-600 active:bg-purple-700 text-white font-extrabold text-xs py-3 px-4 rounded-xl shadow-xl flex items-center space-x-1.5 shrink-0">
-                <i class="fa-solid fa-bolt text-amber-300"></i>
-                <span>PAY ₹399 VIA UPI</span>
-            </button>
+
+            <div>
+                <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-3 pb-1 border-b border-slate-800">क्रिमिनल व बेल विभाग</h4>
+                <ul class="space-y-1.5">
+                    <li><a href="#bail-applications" class="hover:text-gold-400 transition-colors">जमानत (Regular/Anticipatory Bail)</a></li>
+                    <li><a href="#ndps-act" class="hover:text-gold-400 transition-colors">एनडीपीएस एक्ट (NDPS Act Cases)</a></li>
+                    <li><a href="#pocso-act" class="hover:text-gold-400 transition-colors">पॉक्सो एक्ट (POCSO Act)</a></li>
+                    <li><a href="#crimes-against-women" class="hover:text-gold-400 transition-colors">दहेज व 498A (Crimes Against Women)</a></li>
+                    <li><a href="#murder-attempt" class="hover:text-gold-400 transition-colors">हत्या व धारा 307 (Murder / Attempt)</a></li>
+                    <li><a href="#remand-habeas-corpus" class="hover:text-gold-400 transition-colors">पुलिस रिमांड व बंदी प्रत्यक्षीकरण</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-3 pb-1 border-b border-slate-800">फैमिली व सिविल विभाग</h4>
+                <ul class="space-y-1.5">
+                    <li><a href="#divorce-custody" class="hover:text-gold-400 transition-colors">तलाक व बच्चों की कस्टडी (Divorce)</a></li>
+                    <li><a href="#maintenance-125" class="hover:text-gold-400 transition-colors">गुजारा भत्ता (125 CrPC Maintenance)</a></li>
+                    <li><a href="#domestic-violence" class="hover:text-gold-400 transition-colors">घरेलू हिंसा अधिनियम (DV Act)</a></li>
+                    <li><a href="#cheque-bounce-138" class="hover:text-gold-400 transition-colors">चेक बाउंस (138 NI Act)</a></li>
+                    <li><a href="#mact-accident" class="hover:text-gold-400 transition-colors">सड़क दुर्घटना क्लेम (MACT)</a></li>
+                    <li><a href="#rent-eviction" class="hover:text-gold-400 transition-colors">किरायेदार बेदखली (Rent Eviction)</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-3 pb-1 border-b border-slate-800">विधिक अस्वीकरण (Disclaimer)</h4>
+                <p class="text-slate-500 leading-relaxed mb-3">
+                    बार काउंसिल ऑफ इंडिया के नियमों के अनुसार अधिवक्ताओं को विज्ञापन या प्रचार करने की अनुमति नहीं है। यह वेबसाइट केवल विधिक जागरूकता और इटावा न्यायालय से जुड़ी सामान्य जानकारी के उद्देश्य से बनाई गई है।
+                </p>
+                <div class="text-[11px] text-slate-500">
+                    &copy; <span id="currentYear"></span> Advocate Vikas Yadav. All Rights Reserved.
+                </div>
+            </div>
         </div>
-    </div>
+    </footer>
 
+    <!-- JAVASCRIPT APPLICATION CODE: DATA, ROUTER & LOGIC -->
     <script>
-        // 1. Live 15-Minute Countdown Timer
-        let remainingSeconds = 14 * 60 + 59;
-        const countdownEl = document.getElementById('countdownTimer');
-        setInterval(() => {
-            if (remainingSeconds <= 0) {
-                remainingSeconds = 14 * 60 + 59;
-            } else {
-                remainingSeconds--;
+        // Master Dataset of all 16 Practice Areas
+        const legalTopics = [
+            {
+                id: "bail-applications",
+                slug: "bail-applications",
+                num: 1,
+                titleHi: "जमानत याचिकाएं (Regular, Anticipatory, Default Bail)",
+                titleEn: "Bail Applications",
+                category: "criminal",
+                categoryName: "आपराधिक एवं जमानत",
+                icon: "shield-alert",
+                metaTitle: "Best Bail Lawyer in Etawah | Anticipatory & Regular Bail | Advocate Vikas Yadav",
+                metaDesc: "Etawah District Court या High Court से Anticipatory, Regular या Default bail के लिए तुरंत संपर्क करें। Advocate Vikas Yadav - Expert Criminal Bail Lawyer in Etawah.",
+                searchTags: "bail lawyer in etawah, anticipatory bail etawah court, advocate vikas yadav etawah, default bail lawyer, how to get bail in etawah, criminal lawyer etawah",
+                summary: "व्यक्तिगत स्वतंत्रता का संरक्षण किसी भी न्याय प्रणाली की धुरी है। इटावा जिला न्यायालय में पुलिस द्वारा दर्ज की गई प्रथम सूचना रिपोर्ट (FIR) के उपरांत अग्रिम जमानत (Anticipatory Bail) अथवा गिरफ्तारी के पश्चात नियमित जमानत (Regular Bail) प्राप्त करने हेतु सटीक विधिक ड्राफ्टिंग और जोरदार बहस अनिवार्य है।",
+                courtStrategy: "इटावा सत्र न्यायालय और मजिस्ट्रेट न्यायालय में जमानत दाखिल करते समय धारा 41A सीआरपीसी (या बीएनएसएस अनुरूप) और अर्नेश कुमार गाइडलाइंस के उल्लंघन को प्रमुखता से उठाना। यदि 60/90 दिनों में पुलिस आरोप-पत्र प्रस्तुत नहीं कर पाती, तो धारा 167(2) के अंतर्गत 'डिफॉल्ट बेल' को संवैधानिक अधिकार के रूप में हासिल करना।",
+                subTopics: [
+                    { title: "Anticipatory Bail (गिरफ्तारी से पूर्व अग्रिम जमानत)", desc: "धारा 438 सीआरपीसी / धारा 482 बीएनएसएस के अंतर्गत सत्र न्यायालय एवं उच्च न्यायालय से संभावित गिरफ्तारी पर अग्रिम रोक।" },
+                    { title: "Regular Bail (गिरफ्तारी के बाद नियमित जमानत)", desc: "धारा 437/439 सीआरपीसी के तहत जेल में निरुद्ध आरोपी की जमानत याचिका पर पैरवी।" },
+                    { title: "Default Bail (अधूरी चार्जशीट पर अनिवार्य जमानत)", desc: "धारा 167(2) के तहत तय समयसीमा (60 या 90 दिन) में एफएसएल या चार्जशीट दाखिल न होने पर कानूनी रिहाई।" },
+                    { title: "High Court Bail Appeals (इलाहाबाद हाईकोर्ट में अपील)", desc: "इटावा जिला अदालत से जमानत खारिज होने पर इलाहाबाद उच्च न्यायालय में समयबद्ध बेल अपील दाखिल करना।" },
+                    { title: "Bail Cancellation Defense (जमानत निरस्तीकरण से बचाव)", desc: "वादी पक्ष द्वारा दुर्भावनावश गवाहों को धमकाने के झूठे आरोप लगाकर जमानत रद्द करवाने के प्रयासों का खंडन।" },
+                    { title: "Medical Bail Grounds (चिकित्सकीय आधार पर अंतरिम जमानत)", desc: "गंभीर बीमारी या आपात स्थिति के आधार पर त्वरित अंतरिम जमानत प्राप्त करने की कानूनी प्रक्रिया।" }
+                ],
+                faqs: [
+                    { q: "क्या इटावा कोर्ट में केस दर्ज होते ही अग्रिम जमानत मिल सकती है?", a: "हाँ, यदि गैर-जमानती अपराध में दुर्भावनावश गिरफ्तारी की आशंका हो तो एफआईआर की प्रति के साथ सत्र न्यायालय इटावा में अग्रिम जमानत आवेदन तुरंत लगाया जा सकता है।" },
+                    { q: "चार्जशीट दाखिल होने में देरी होने पर क्या राहत मिलती है?", a: "यदि पुलिस नियत 60 या 90 दिनों में संपूर्ण चार्जशीट दाखिल नहीं करती है तो आरोपी को डिफॉल्ट बेल का वैधानिक अधिकार प्राप्त होता है।" }
+                ]
+            },
+            {
+                id: "remand-habeas-corpus",
+                slug: "remand-habeas-corpus",
+                num: 2,
+                titleHi: "रिमांड व बंदी प्रत्यक्षीकरण (Remand & Habeas Corpus)",
+                titleEn: "Remand & Habeas Corpus",
+                category: "criminal",
+                categoryName: "आपराधिक एवं जमानत",
+                icon: "lock",
+                metaTitle: "Habeas Corpus & Remand Case Lawyer in Etawah | Advocate Vikas Yadav",
+                metaDesc: "पुलिस की अवैध हिरासत (Illegal Detention) या पुलिस रिमांड को चुनौती देने के लिए Habeas Corpus और रिमांड मामलों के विशेषज्ञ Advocate Vikas Yadav (Etawah) से कानूनी मदद लें।",
+                searchTags: "habeas corpus lawyer etawah, police remand etawah court, illegal police detention etawah, advocate vikas yadav, judicial custody cases, high court writ lawyer",
+                summary: "भारतीय संविधान का अनुच्छेद 21 एवं 22 किसी भी नागरिक को अवैध निरुद्धि से सुरक्षा प्रदान करता है। इटावा के विभिन्न थानों द्वारा अवैध रूप से रोके गए व्यक्तियों की रिहाई अथवा पुलिस कस्टडी रिमांड (PCR) के आधारहीन आवेदनों का पुरजोर विरोध करना इस श्रेणी का मुख्य उद्देश्य है।",
+                courtStrategy: "पुलिस जब केवल 'बरामदगी' के नाम पर अनावश्यक पुलिस कस्टडी रिमांड मांगती है, तो मजिस्ट्रेट के समक्ष यह सिद्ध करना कि अभियुक्त पहले ही सहयोग कर चुका है और रिमांड का एकमात्र उद्देश्य मानसिक व शारीरिक उत्पीड़न है। 24 घंटे से अधिक थाने में रखने पर तुरंत कोर्ट में सर्च वारंट या उच्च न्यायालय में बंदी प्रत्यक्षीकरण याचिका दाखिल करना।",
+                subTopics: [
+                    { title: "Police Remand Challenge (पुलिस कस्टडी रिमांड का विरोध)", desc: "धारा 167 सीआरपीसी के तहत पुलिस द्वारा मांगी जाने वाली रिमांड का कानूनी तर्कों से विरोध ताकि अभियुक्त को टॉर्चर से बचाया जा सके।" },
+                    { title: "Judicial Custody Extension Defense", desc: "बिना ठोस प्रगति के बार-बार न्यायिक हिरासत बढ़ाने के रूटीन आदेशों को चुनौती देना।" },
+                    { title: "Habeas Corpus Writ (उच्च न्यायालय में बंदी प्रत्यक्षीकरण याचिका)", desc: "पुलिस द्वारा बिना किसी एफआईआर अथवा कानूनी प्रक्रिया के किसी व्यक्ति को गायब या कैद रखने पर इलाहाबाद हाईकोर्ट में अनुच्छेद 226 के अंतर्गत त्वरित रिट याचिका।" },
+                    { title: "Illegal Detention By Police (अवैध पुलिस हिरासत से रिहाई)", desc: "थाने में अवैध रूप से 24 घंटे से अधिक बैठाए जाने पर जिला मजिस्ट्रेट/सीजेएम इटावा के समक्ष सर्च वारंट आवेदन (Section 97/100)।" },
+                    { title: "Transit Remand Issues (ट्रांजिट रिमांड पर बहस)", desc: "अन्य राज्यों या जिलों की पुलिस द्वारा इटावा से आरोपी को ले जाने पर उचित कानूनी प्रक्रियाओं का अनुपालन सुनिश्चित कराना।" }
+                ],
+                faqs: [
+                    { q: "यदि पुलिस किसी परिजन को बिना कारण थाने में बैठा ले तो क्या करें?", a: "तुरंत उच्चाधिकारियों को ऑनलाइन/टेलीग्राम शिकायत भेजें और सक्षम न्यायालय में एडवोकेट के माध्यम से धारा 97 सीआरपीसी के तहत सर्च वारंट आवेदन प्रस्तुत करें।" }
+                ]
+            },
+            {
+                id: "ndps-act",
+                slug: "ndps-act",
+                num: 3,
+                titleHi: "एनडीपीएस एक्ट मामले (NDPS Act Cases)",
+                titleEn: "NDPS Act Defense",
+                category: "criminal",
+                categoryName: "आपराधिक एवं जमानत",
+                icon: "alert-triangle",
+                metaTitle: "Top NDPS Lawyer in Etawah | Drugs Case Defense | Advocate Vikas Yadav",
+                metaDesc: "क्या आप पर Etawah में फर्जी NDPS (अफीम, गांजा, ड्रग्स) केस लगा है? NDPS bail और ट्रायल में मजबूत बचाव के लिए Advocate Vikas Yadav से संपर्क करें।",
+                searchTags: "ndps case in etawah, ndps bail lawyer etawah, farzi ndps case defence, advocate vikas yadav etawah court, conscious possession ndps, afeem ganja case lawyer",
+                summary: "स्वापक औषधि और मनःप्रभावी पदार्थ अधिनियम (NDPS Act) के अंतर्गत लगाए गए मुकदमे अत्यंत कठोर होते हैं, जहां धारा 37 के तहत जमानत की कड़ी शर्तें लागू होती हैं। इटावा व आसपास के क्षेत्रों में पुलिस द्वारा बरामदगी में प्रक्रियागत खामियों को पकड़कर अभियुक्त को कानूनी राहत दिलाना हमारी विशेषता है।",
+                courtStrategy: "एनडीपीएस मामलों में पुलिस की सबसे बड़ी कमजोरी धारा 50 (तलाशी का अधिकार), धारा 42 (गुप्त सूचना की लिखित प्रविष्टि), और जब्ती मेमो (Seizure Memo) में निष्पक्ष गवाहों का न होना होता है। सीलबंद नमूने (Sample) और एफएसएल रिपोर्ट के विरोधाभास को उजागर कर जमानत प्राप्त करना।",
+                subTopics: [
+                    { title: "Commercial vs Small Quantity Rules", desc: "मादक पदार्थ की कुल मात्रा और शुद्धता (Purity) के आधार पर धारा 37 के प्रतिबंध से छूट प्राप्त करने की कानूनी बहस।" },
+                    { title: "Bail in NDPS Act (Sec 37 Constraints)", desc: "विशेष एनडीपीएस कोर्ट इटावा में कड़े प्रतिबंधों के बावजूद गैर-संलिप्तता और प्रक्रियागत त्रुटियों के आधार पर जमानत की पैरवी।" },
+                    { title: "Section 50 Search Protocol Violations", desc: "व्यक्तिगत तलाशी के समय राजपत्रित अधिकारी (Gazetted Officer) या मजिस्ट्रेट के समक्ष तलाशी के अधिकार की अनदेखी का विधिक लाभ।" },
+                    { title: "Fake Recovery / Planted Evidence Defense", desc: "पुलिस द्वारा रंजिशन 'प्लांट' की गई बरामदगी, मौके पर स्वतंत्र गवाहों की अनुपस्थिति और पुलिस कर्मियों के बयानों में अंतर्विरोध साबित करना।" },
+                    { title: "FSL / Contraband Testing Delays", desc: "विधि विज्ञान प्रयोगशाला (FSL) की रिपोर्ट समय पर न आने अथवा नमूनों की सील टूटी पाए जाने पर तकनीकी आधार पर रिहाई।" }
+                ],
+                faqs: [
+                    { q: "क्या व्यावसायिक मात्रा (Commercial Quantity) में जमानत संभव है?", a: "हाँ, यदि बचाव पक्ष यह साबित कर दे कि बरामदगी में धारा 42 व 50 की अनिवार्य शर्तों का उल्लंघन हुआ है अथवा सैंपल की कस्टडी संदिग्ध है, तो धारा 37 के बावजूद जमानत मिल सकती है।" }
+                ]
+            },
+            {
+                id: "pocso-act",
+                slug: "pocso-act",
+                num: 4,
+                titleHi: "पॉक्सो एक्ट मामले (POCSO Act Defense)",
+                titleEn: "POCSO Act Defense",
+                category: "criminal",
+                categoryName: "आपराधिक एवं जमानत",
+                icon: "user-x",
+                metaTitle: "Best POCSO Case Lawyer in Etawah | False Case Defense | Advocate Vikas Yadav",
+                metaDesc: "Etawah court में POCSO Act के झूठे केस से बचने और सही कानूनी मार्गदर्शन के लिए POCSO मामलों के एक्सपर्ट Advocate Vikas Yadav से तुरंत सलाह लें।",
+                searchTags: "pocso lawyer in etawah, false pocso case defence, pocso bail etawah court, advocate vikas yadav pocso expert, age determination test, child abuse false cases",
+                summary: "लैंगिक अपराधों से बालकों का संरक्षण अधिनियम (POCSO Act) में धारा 29 और 30 के तहत दोष की पूर्व-धारणा (Presumption of Guilt) होती है। आपसी सहमति के प्रेम-प्रसंग या पारिवारिक रंजिश में दर्ज झूठे पॉक्सो मुकदमों में अभियुक्त के जीवन और भविष्य की रक्षा करना अत्यंत संवेदनशील और चुनौतीपूर्ण कार्य है।",
+                courtStrategy: "विशेष पॉक्सो न्यायालय इटावा में पीड़िता की उम्र को विवादित करना सबसे प्रभावी कदम होता है। स्कूल रजिस्टर और नगर पालिका जन्म प्रमाण पत्र के अंतर्विरोध, मेडिकल ऑसिफिकेशन टेस्ट (Ossification Test) और धारा 164 बयानों के दौरान दिए गए विरोधाभासी बयानों पर सटीक जिरह (Cross-examination) करना।",
+                subTopics: [
+                    { title: "Minor Age Determination / Ossification Test", desc: "जेजे एक्ट की धारा 94 और मेडिकल हड्डियों के एक्स-रे परीक्षण के आधार पर पीड़िता के बालिग होने के साक्ष्य प्रस्तुत करना।" },
+                    { title: "Bail Rules under POCSO Act", desc: "विशेष पॉक्सो अदालत में प्रारंभिक चार्जशीट दाखिल होने के पश्चात परिस्थितियों के आधार पर जमानत हासिल करना।" },
+                    { title: "False POCSO Case Defense (प्रेम-प्रसंग में दर्ज मुकदमे)", desc: "किशोरी के स्वेच्छा से जाने और पारिवारिक दबाव में झूठा बयान दर्ज कराने की वास्तविकता को साक्ष्यों से उजागर करना।" },
+                    { title: "Cross-Examination of Hostile Witnesses", desc: "अदालत में मुकरने वाले गवाहों और विवेचक से कानूनी रूप से धारदार जिरह कर अभियोजन के केस की कड़ियों को तोड़ना।" },
+                    { title: "Sec 164 Statement Recording Scrutiny", desc: "मजिस्ट्रेट के समक्ष दर्ज बयान में पुलिस द्वारा दी गई ट्यूटरिंग और विरोधाभासों को कोर्ट के संज्ञान में लाना।" }
+                ],
+                faqs: [
+                    { q: "यदि लड़की अपनी मर्जी से गई थी, तब भी पॉक्सो लग सकता है?", a: "यदि लड़की की उम्र 18 वर्ष से कम साबित होती है तो सहमति कानूनन अमान्य होती है; किंतु यदि उम्र के दस्तावेज संदिग्ध हों तो मेडिकल जांच से बालिग सिद्ध कर केस खारिज कराया जा सकता है।" }
+                ]
+            },
+            {
+                id: "crimes-against-women",
+                slug: "crimes-against-women",
+                num: 5,
+                titleHi: "महिलाओं के विरुद्ध अपराध (498A, 304B, 376)",
+                titleEn: "Crimes Against Women",
+                category: "criminal",
+                categoryName: "आपराधिक एवं जमानत",
+                icon: "heart-crack",
+                metaTitle: "498A & Women Rights Lawyer in Etawah | Advocate Vikas Yadav",
+                metaDesc: "498A (दहेज), 376 (झूठे रेप केस) या महिला थाने के विवादों में कानूनी सहायता के लिए Etawah के टॉप क्रिमिनल लॉयर Advocate Vikas Yadav की सेवाएँ लें।",
+                searchTags: "498a lawyer etawah, mahila thana etawah disputes, dowry death 304b lawyer, false rape case defence 376, advocate vikas yadav etawah, quashing fir high court",
+                summary: "वैवाहिक विवादों में धारा 498A (दहेज प्रताड़ना), धारा 304B (दहेज मृत्यु) तथा सहमति संबंध टूटने पर धारा 376 (दुष्कर्म) का आरोप लगाना अत्यंत सामान्य हो चुका है। हम जहां एक ओर पीड़ित महिलाओं के वास्तविक अधिकारों की रक्षा करते हैं, वहीं दूसरी ओर निर्दोष पति व ससुराल पक्ष को झूठे मुकदमों से विधिक सुरक्षा प्रदान करते हैं।",
+                courtStrategy: "इटावा महिला थाना एवं न्यायालय में पूरे ससुराल पक्ष (ननद, देवर, सास-ससुर) के सामूहिक नामजदगी को सुप्रीम कोर्ट की गीता मेहरोत्रा व अर्नेश कुमार नजीरों के तहत चुनौती देना। धारा 376 में 'शादी के झूठे वादे' (Misconception of Fact) के आरोपों को आपसी सहमति साबित कर डिस्चार्ज या जमानत कराना।",
+                subTopics: [
+                    { title: "498A Dowry Harassment Defense", desc: "दहेज उत्पीड़न के सामान्य व अस्पष्ट आरोपों के आधार पर पूरे परिवार की गिरफ्तारी पर तत्काल अंतरिम रोक और डिस्चार्ज।" },
+                    { title: "304B Dowry Death Cases", desc: "विवाह के 7 वर्ष के भीतर अस्वाभाविक मृत्यु के मामलों में 'दहेज मांग और प्रताड़ना' के प्रत्यक्ष संबंध के अभाव को सिद्ध करना।" },
+                    { title: "376 Rape & False Promise of Marriage", desc: "दीर्घकालिक आपसी सहमति के संबंधों को रिश्ता टूटने पर बलात्कार का रंग देने के मामलों में ठोस डिजिटल साक्ष्यों से बचाव।" },
+                    { title: "Mahila Thana Mediation & Counselling", desc: "इटावा महिला थाने में सुलह-समझौता वार्ता के दौरान पक्षकार के कानूनी हितों की रक्षा और अनावश्यक दबाव का विरोध।" },
+                    { title: "Quashing FIR in High Court (धारा 482)", desc: "आपसी समझौते या पूरी तरह दुर्भावनापूर्ण प्राथमिकियों को इलाहाबाद उच्च न्यायालय से सीधे रद्द (Quash) करवाना।" }
+                ],
+                faqs: [
+                    { q: "क्या 498A दर्ज होते ही पुलिस तुरंत पति या सास-ससुर को गिरफ्तार कर सकती है?", a: "नहीं। सुप्रीम कोर्ट के स्पष्ट दिशा-निर्देशों के अनुसार पहले धारा 41A का नोटिस देना अथवा परिवार परामर्श केंद्र में मध्यस्थता कराना आवश्यक है।" }
+                ]
+            },
+            {
+                id: "murder-attempt",
+                slug: "murder-attempt",
+                num: 6,
+                titleHi: "हत्या व हत्या का प्रयास (धारा 302 / 307)",
+                titleEn: "Murder & Attempt (302/307)",
+                category: "criminal",
+                categoryName: "आपराधिक एवं जमानत",
+                icon: "flame",
+                metaTitle: "Murder Trial (Sec 302/307) Lawyer in Etawah | Advocate Vikas Yadav",
+                metaDesc: "हत्या (302) और हत्या के प्रयास (307) जैसे गंभीर मुकदमों की पैरवी और जमानत के लिए Etawah District Court में Advocate Vikas Yadav से संपर्क करें।",
+                searchTags: "302 lawyer etawah, attempt to murder 307 case, cross fir lawyer in etawah, advocate vikas yadav murder trial, criminal defense lawyer etawah court",
+                summary: "भारतीय न्याय संहिता अथवा आईपीसी की धारा 302 और 307 के अंतर्गत परीक्षण (Sessions Trial) किसी भी वकील के कौशल और साक्ष्य विश्लेषण की असली परीक्षा होती है। प्रत्यक्षदर्शी गवाहों की सत्यता, डॉक्टर की मेडिकल रिपोर्ट और पुलिस की बरामदगी में अंतर्विरोध स्थापित कर निर्दोष को न्याय दिलाना हमारा कर्तव्य है।",
+                courtStrategy: "इटावा के ग्रामीण व शहरी क्षेत्रों में जमीनी विवादों के चलते अक्सर क्रॉस-एफआईआर (Cross-FIRs) होती हैं। अदालत में यह सिद्ध करना कि प्रथम प्रहार किसने किया था, आत्मरक्षा के निजी अधिकार (Right of Private Defense) का प्रयोग, तथा धारा 27 साक्ष्य अधिनियम के तहत फर्जी तमंचा/हथियार की बरामदगी को ध्वस्त करना।",
+                subTopics: [
+                    { title: "Cross-FIR in 302/307 (क्रॉस केस की रणनीति)", desc: "दोनों पक्षों से चोटें आने की दशा में विरोधी पक्ष की एफआईआर और साक्ष्यों को आमने-सामने रखकर निष्पक्ष जांच की मांग।" },
+                    { title: "Right to Private Defense (आत्मरक्षा का विधिक अधिकार)", desc: "अपनी या अपने परिवार की जान-माल की रक्षा में किए गए आवश्यक बचाव को साक्ष्यों सहित न्यायालय के समक्ष स्थापित करना।" },
+                    { title: "Circumstantial Evidence Challenge", desc: "प्रत्यक्ष गवाह न होने की स्थिति में पुलिस द्वारा बनाई गई 'Last Seen Theory' और परिस्थितिजन्य साक्ष्यों की कड़ी को तोड़ना।" },
+                    { title: "Dying Declaration Validity (मृत्युकालिक कथन की चुनौती)", desc: "मजिस्ट्रेट या डॉक्टर के समक्ष दर्ज बयान के समय मृतक की मानसिक दशा और पुलिस द्वारा दी गई ट्यूटरिंग को चुनौती देना।" },
+                    { title: "Fake Weapon Recovery Disputes", desc: "धारा 27 के अंतर्गत बंद कमरे या खुले खेत से दिखाई गई मनगढ़ंत बरामदगी और स्वतंत्र साक्षियों के अभाव का विधिक लाभ।" }
+                ],
+                faqs: [
+                    { q: "क्या 307 के मुकदमे में यदि चोट साधारण हो तो धारा हट सकती है?", a: "हाँ, यदि मेडिकल रिपोर्ट में चोट किसी वाइटल ऑर्गन (Vital Organ) पर न हो और जानलेवा न पाई जाए, तो आरोप तय (Charge Frame) के समय 307 को 324/325 में बदलवाया जा सकता है।" }
+                ]
+            },
+            {
+                id: "sc-st-act",
+                slug: "sc-st-act",
+                num: 7,
+                titleHi: "एससी/एसटी अत्याचार निवारण अधिनियम",
+                titleEn: "SC/ST Act Defense",
+                category: "special",
+                categoryName: "विशेष व साइबर",
+                icon: "shield",
+                metaTitle: "SC/ST Act Case Lawyer in Etawah | False Case Defense | Advocate Vikas Yadav",
+                metaDesc: "Etawah में जमीनी या आपसी रंजिश के कारण लगाए गए झूठे SC/ST एक्ट के मुकदमों में जमानत और बचाव के लिए Advocate Vikas Yadav से कानूनी सहायता प्राप्त करें।",
+                searchTags: "sc st act lawyer etawah, false harijan act case defence, sc st bail etawah court, advocate vikas yadav, quashing sc st fir",
+                summary: "अनुसूचित जाति एवं जनजाति (अत्याचार निवारण) अधिनियम समाज के कमजोर वर्गों की सुरक्षा हेतु बनाया गया था, किंतु इटावा एवं आसपास के जिलों में प्रधानी चुनाव, चकबंदी या भूमि विवादों में इसे अक्सर दबाव बनाने के हथियार के रूप में उपयोग किया जाता है। धारा 18 की पाबंदियों के बीच विधिक संरक्षण दिलाना हमारी विशेषज्ञता है।",
+                courtStrategy: "विशेष एससी/एसटी न्यायालय इटावा में यह स्थापित करना कि कथित घटना 'सार्वजनिक दृष्टिगोचर स्थान' (Public View) पर घटित नहीं हुई थी तथा जातिगत अपमान करने का कोई आशय नहीं था। ललिता कुमारी निर्णय के आलोक में प्रारंभिक जांच के अभाव और रंजिश के दस्तावेजी प्रमाण प्रस्तुत करना।",
+                subTopics: [
+                    { title: "Defense in False Atrocity Cases", desc: "आपसी भूमि या चुनावी रंजिश में दर्ज कराई गई मनगढ़ंत एफआईआर के विरुद्ध प्रथम दृष्टया साक्ष्य प्रस्तुत कर राहत पाना।" },
+                    { title: "Anticipatory Bail Constraints (Sec 18 Bar)", desc: "सुप्रीम कोर्ट के दिशानिर्देशों के तहत यदि प्रथम दृष्टया अपराध नहीं बनता तो अग्रिम जमानत की मांग प्रस्तुत करना।" },
+                    { title: "Compromise / Out of Court Settlement", desc: "पक्षकारों के मध्य आपसी समझौते की दशा में उच्च न्यायालय में धारा 482 के अंतर्गत एफआईआर निस्तारण की प्रक्रिया।" },
+                    { title: "Cross-Case Filing in Village Disputes", desc: "एकतरफा दबाव से बचने हेतु घटना के वास्तविक तथ्यों को उजागर करते हुए धारा 156(3) के माध्यम से जवाबी वाद दर्ज कराना।" },
+                    { title: "High Court Quashing of SC/ST FIR", desc: "दुर्भावनापूर्ण और बिना किसी मेडिकल या स्वतंत्र साक्ष्य के दर्ज मामलों को सीधे उच्च न्यायालय से निरस्त करवाना।" }
+                ],
+                faqs: [
+                    { q: "क्या एससी/एसटी एक्ट में अग्रिम जमानत मिल सकती है?", a: "यदि एफआईआर को पढ़ने मात्र से अपराध के अनिवार्य तत्व (जैसे सार्वजनिक स्थल पर जातिसूचक शब्दों का प्रयोग) स्पष्ट न हों, तो न्यायालय अग्रिम जमानत स्वीकार कर सकता है।" }
+                ]
+            },
+            {
+                id: "juvenile-justice",
+                slug: "juvenile-justice",
+                num: 8,
+                titleHi: "किशोर न्याय अधिनियम (JJ Board Matters)",
+                titleEn: "Juvenile Justice",
+                category: "special",
+                categoryName: "विशेष व साइबर",
+                icon: "baby",
+                metaTitle: "Juvenile Case Lawyer in Etawah | JJ Board | Advocate Vikas Yadav",
+                metaDesc: "नाबालिग बच्चों के मुकदमों, Juvenile Justice Board (JJ Board) में जमानत और ट्रायल के लिए Etawah में Advocate Vikas Yadav से संपर्क करें।",
+                searchTags: "juvenile justice lawyer etawah, jj board etawah, minor bail advocate etawah, age certificate dispute, advocate vikas yadav juvenile court",
+                summary: "18 वर्ष से कम आयु के किशोरों द्वारा किए गए किसी भी कथित कृत्य की सुनवाई सामान्य अदालत में न होकर किशोर न्याय बोर्ड (JJB) इटावा में होती है। यहां कानून का उद्देश्य दंडात्मक न होकर सुधारात्मक होता है, और धारा 12 के अंतर्गत जमानत किशोर का प्राथमिक वैधानिक अधिकार है।",
+                courtStrategy: "पुलिस द्वारा अक्सर 17-18 वर्ष के युवाओं को वयस्क दिखाकर जेल भेज दिया जाता है। स्कूल प्रवेश रजिस्टर, नगर निगम जन्म प्रमाणपत्र अथवा मेडिकल ऑसिफिकेशन टेस्ट के जरिए तुरंत किशोर घोषित (Juvenility Declare) कराना और जेल से निकालकर बाल सुधार गृह या परिजनों की सुपुर्दगी में दिलाना।",
+                subTopics: [
+                    { title: "Juvenile Justice Board Bail Process", desc: "धारा 12 जेजे एक्ट के तहत गैर-जमानती अपराधों में भी किशोर को जमानत दिलाना, जब तक कि उससे किसी अपराधी से मिलने का अंदेशा न हो।" },
+                    { title: "Preliminary Assessment for Heinous Crimes", desc: "16 से 18 वर्ष के किशोरों के जघन्य अपराधों में वयस्क की भांति ट्रायल के निर्णय के विरुद्ध बोर्ड के समक्ष मनोवैज्ञानिक व विधिक पैरवी।" },
+                    { title: "Age Fraud & Birth Certificate Disputes", desc: "उम्र संबंधी विवादों में धारा 94 जेजे एक्ट के प्राथमिक दस्तावेजों की कानूनी वैधता स्थापित करना।" },
+                    { title: "Transfer of Case to Adult Court Defense", desc: "चिल्ड्रन कोर्ट (Children's Court) में केस ट्रांसफर किए जाने के प्रस्ताव का मजबूती से विरोध करना।" },
+                    { title: "Rehabilitation & Counseling Orders", desc: "सजा के स्थान पर किशोर के भविष्य, शिक्षा और मानसिक पुनर्वास के पक्ष में न्यायालयीन आदेश पारित कराना।" }
+                ],
+                faqs: [
+                    { q: "यदि स्कूल के दस्तावेज में उम्र गलत दर्ज हो तो सही उम्र कैसे सिद्ध करें?", a: "सक्षम न्यायालय के आदेश से मुख्य चिकित्सा अधिकारी (CMO) के मेडिकल बोर्ड द्वारा हड्डियों का एक्स-रे (Ossification Test) कराकर सटीक उम्र निर्धारित कराई जा सकती है।" }
+                ]
+            },
+            {
+                id: "economic-cyber-crime",
+                slug: "economic-cyber-crime",
+                num: 9,
+                titleHi: "आर्थिक अपराध व साइबर क्राइम (420 / 406)",
+                titleEn: "Cyber & Fraud (420)",
+                category: "special",
+                categoryName: "विशेष व साइबर",
+                icon: "binary",
+                metaTitle: "Cyber Crime & Fraud (420) Lawyer in Etawah | Advocate Vikas Yadav",
+                metaDesc: "धोखाधड़ी (420), अमानत में खयानत (406), या बैंक अकाउंट फ्रीज होने जैसे साइबर क्राइम्स में बचाव के लिए Advocate Vikas Yadav (Etawah) की कानूनी मदद लें।",
+                searchTags: "420 lawyer etawah, cyber crime lawyer etawah, bank account unfreeze advocate, fraud case defence etawah, advocate vikas yadav economic offences",
+                summary: "ऑनलाइन धोखाधड़ी, यूपीआई फ्रॉड, फर्जी निवेश स्कीम तथा लेनदेन के सामान्य दीवानी विवादों को धारा 420 (धोखाधड़ी) और 406 (अमानत में खयानत) का आपराधिक रूप देना तेजी से बढ़ रहा है। पुलिस द्वारा धारा 102 सीआरपीसी के अंतर्गत व्यापारियों के बैंक खातों को फ्रीज किए जाने के मामलों में त्वरित विधिक राहत दिलाना।",
+                courtStrategy: "इटावा कोर्ट में यह स्पष्ट करना कि कथित मामला केवल संविदा भंग (Breach of Contract) का है, न कि प्रारंभ से ही बेईमानी का इरादा था। साइबर सेल द्वारा गैर-कानूनी ढंग से फ्रीज किए गए खातों को सशर्त अनफ्रीज कराने हेतु मजिस्ट्रेट के समक्ष विस्तृत आवेदन प्रस्तुत करना।",
+                subTopics: [
+                    { title: "Cyber Fraud & Online Scams Defense", desc: "फिशिंग, ओटीपी फ्रॉड या टेलीग्राम टास्क घोटालों में अनजाने में संलिप्त दिखाए गए व्यक्तियों का विधिक बचाव।" },
+                    { title: "Bank Account Freeze / Defreeze Issues", desc: "साइबर सेल द्वारा धारा 102 सीआरपीसी के तहत रोके गए खातों को कानूनी प्रक्रिया के तहत अनफ्रीज कराना।" },
+                    { title: "420 Cheating & Fraud Case Defense", desc: "सामान्य कारोबारी घाटे या लेन-देन को 420 का रूप दिए जाने पर डिस्चार्ज आवेदन अथवा अग्रिम जमानत हासिल करना।" },
+                    { title: "406 Criminal Breach of Trust", desc: "अमानत में खयानत के झूठे आरोपों में संपत्ति या रकम के स्वामित्व का वास्तविक साक्ष्य पेश कर बचाव करना।" },
+                    { title: "Builder-Buyer / Real Estate Disputes", desc: "प्लॉट या मकान की रजिस्ट्री व बयाना में विवाद होने पर आपराधिक केस से बचाव एवं दीवानी राहत की दिशा।" }
+                ],
+                faqs: [
+                    { q: "यदि मेरा बैंक खाता साइबर पुलिस ने फ्रीज कर दिया है तो वह कैसे खुलेगा?", a: "संबंधित जांच अधिकारी को विधिक नोटिस भेजकर एवं क्षेत्राधिकार वाले मजिस्ट्रेट न्यायालय में धारा 457 सीआरपीसी के तहत अर्जी लगाकर खाते को पुनः चालू कराया जा सकता है।" }
+                ]
+            },
+            {
+                id: "maintenance-125",
+                slug: "maintenance-125",
+                num: 10,
+                titleHi: "भरण-पोषण वाद (धारा 125 CrPC / BNSS)",
+                titleEn: "Maintenance (125 CrPC)",
+                category: "family",
+                categoryName: "पारिवारिक व वैवाहिक",
+                icon: "coins",
+                metaTitle: "Maintenance Case Lawyer in Etawah | 125 CrPC | Advocate Vikas Yadav",
+                metaDesc: "पत्नी या बच्चों के गुजारा भत्ता (Maintenance - 125 CrPC) का दावा करने या झूठे दावों से बचने के लिए Etawah Family Court में Advocate Vikas Yadav से सलाह लें।",
+                searchTags: "maintenance lawyer in etawah, 125 crpc case etawah, guzara bhatta lawyer, alimony claim etawah court, advocate vikas yadav family court",
+                summary: "परिवार न्यायालय इटावा में भरण-पोषण (धारा 125 सीआरपीसी / धारा 144 बीएनएसएस) का मुकदमा अत्यंत महत्वपूर्ण होता है। यह जहां एक ओर बेसहारा पत्नी और बच्चों को सम्मानजनक जीवन जीने का अधिकार देता है, वहीं दूसरी ओर पति की वास्तविक आर्थिक स्थिति को छिपाकर अत्यधिक रकम वसूलने के दावों से बचाव भी करता है।",
+                courtStrategy: "सुप्रीम कोर्ट के 'रजनीश बनाम नेहा' ऐतिहासिक फैसले के तहत दोनों पक्षों के आय एवं संपत्ति का अनिवार्य शपथ-पत्र (Asset & Liability Affidavit) दाखिल कराना। यदि पत्नी स्वयं कमाने में सक्षम है या बिना किसी उचित कारण के अलग रह रही है, तो धारा 125(4) के तहत भत्ता अस्वीकार कराने के साक्ष्य रखना।",
+                subTopics: [
+                    { title: "Interim Maintenance Claims", desc: "केस चलने के दौरान तात्कालिक खर्चों हेतु अंतरिम भरण-पोषण का निर्धारण शीघ्र अति शीघ्र कराना।" },
+                    { title: "Section 125 CrPC Court Process", desc: "इटावा फैमिली कोर्ट में वाद दाखिल करने से लेकर नोटिस तामीला और साक्ष्य संकलन की पूरी प्रक्रिया।" },
+                    { title: "Asset / Income Affidavit Rules (Rajnesh vs Neha)", desc: "आयकर रिटर्न (ITR), बैंक विवरण और संपत्तियों के आधार पर निष्पक्ष आर्थिक मूल्यांकन प्रस्तुत करना।" },
+                    { title: "Maintenance Enhancement / Reduction", desc: "महंगाई बढ़ने पर भत्ते में वृद्धि या पति की नौकरी जाने/बीमारी की स्थिति में भत्ते की रकम कम कराने की याचिका।" },
+                    { title: "Execution of Arrears (बकाया वसूली व वारंट)", desc: "बकाया भत्ते का भुगतान न करने पर पति के विरुद्ध वसूली वारंट या कुर्की का आदेश पारित कराना।" }
+                ],
+                faqs: [
+                    { q: "यदि पत्नी स्वेच्छा से मायके में रह रही हो तो क्या वह भरण-पोषण पाने की हकदार है?", a: "धारा 125(4) सीआरपीसी के अनुसार यदि पत्नी बिना किसी युक्तिसंगत कारण के पति का साथ छोड़ती है या जारकर्म (Adultery) में रहती है, तो वह भरण-पोषण की हकदार नहीं होती।" }
+                ]
+            },
+            {
+                id: "domestic-violence",
+                slug: "domestic-violence",
+                num: 11,
+                titleHi: "घरेलू हिंसा से महिला संरक्षण अधिनियम (DV Act)",
+                titleEn: "Domestic Violence (DV)",
+                category: "family",
+                categoryName: "पारिवारिक व वैवाहिक",
+                icon: "home",
+                metaTitle: "Domestic Violence Lawyer in Etawah | DV Act | Advocate Vikas Yadav",
+                metaDesc: "घरेलू हिंसा क्या है? DV Act के तहत शिकायत दर्ज करने या झूठे केस (Protection & Residence order) से बचाव के लिए Etawah में Advocate Vikas Yadav से मिलें।",
+                searchTags: "domestic violence kya hai, domestic violence lawyer in etawah, dv act court etawah, right to residence, false dv case defence, advocate vikas yadav",
+                summary: "घरेलू हिंसा अधिनियम 2005 महिलाओं को शारीरिक, मानसिक, मौखिक और आर्थिक प्रताड़ना से सुरक्षा प्रदान करने वाला एक सिविल-कम-क्रिमिनल कानून है। इटावा न्यायालय में निवास का अधिकार (Right to Residence), संरक्षण आदेश (Protection Orders) तथा अंतरिम मुआवजे के दावों का प्रभावी संचालन।",
+                courtStrategy: "डीवी एक्ट में अक्सर ससुराल पक्ष के दूर के रिश्तेदारों को अनावश्यक रूप से पक्षकार बना दिया जाता है। सुप्रीम कोर्ट के सतीश आहूजा फैसले का हवाला देकर माता-पिता की स्व-अर्जित संपत्ति पर बहू के अनुचित दावे का विरोध करना और वास्तविक पीड़ित महिला को साझा गृहस्थी में उसका अधिकार दिलाना।",
+                subTopics: [
+                    { title: "Domestic Violence Kya Hai (घरेलू हिंसा की कानूनी परिभाषा)", desc: "शारीरिक, भावनात्मक, लैंगिक और आर्थिक शोषण के तत्वों को अदालत के समक्ष कानूनी रूप से प्रमाणित करना।" },
+                    { title: "Protection Orders Against In-laws", desc: "धारा 18 के अंतर्गत मजिस्ट्रेट से विपक्षीगण द्वारा किसी भी प्रकार के संपर्क, गाली-गलौज या धमकी पर तत्काल रोक।" },
+                    { title: "Right to Shared Household (साझा गृहस्थी में निवास)", desc: "धारा 19 के तहत ससुराल के मकान में सुरक्षित रहने का अधिकार या वैकल्पिक आवास का किराया प्राप्त करना।" },
+                    { title: "Monetary Relief & Compensation (धारा 20 व 22)", desc: "चिकित्सा खर्च, आजीविका हानि और मानसिक उत्पीड़न हेतु एकमुश्त या मासिक क्षतिपूर्ति की मांग।" },
+                    { title: "Quashing of False DV Complaints", desc: "बिना किसी साझा निवास के ननद या देवर के विरुद्ध दर्ज कराई गई दुर्भावनापूर्ण शिकायतों को खारिज करवाना।" }
+                ],
+                faqs: [
+                    { q: "क्या घरेलू हिंसा कानून में पति या सास-ससुर को सीधे जेल हो सकती है?", a: "यह मुख्य रूप से दीवानी राहत का कानून है। गिरफ्तारी केवल तभी संभव होती है जब न्यायालय द्वारा पारित संरक्षण आदेश (Protection Order) का जानबूझकर उल्लंघन किया जाए।" }
+                ]
+            },
+            {
+                id: "divorce-custody",
+                slug: "divorce-custody",
+                num: 12,
+                titleHi: "तलाक व संतान अभिरक्षा (Divorce & Custody)",
+                titleEn: "Divorce & Child Custody",
+                category: "family",
+                categoryName: "पारिवारिक व वैवाहिक",
+                icon: "split",
+                metaTitle: "Best Divorce & Child Custody Lawyer in Etawah | Advocate Vikas Yadav",
+                metaDesc: "Etawah Family Court में जल्दी तलाक (Mutual Divorce), contested divorce या Child Custody के जटिल मामलों के लिए Advocate Vikas Yadav की एक्सपर्ट सेवाएं लें।",
+                searchTags: "divorce lawyer in etawah, mutual divorce etawah court, child custody lawyer, talaq ka case kaise kare, advocate vikas yadav divorce expert",
+                summary: "जब वैवाहिक संबंध इस मोड़ पर पहुंच जाएं जहां सुलह असंभव हो, तब हिंदू विवाह अधिनियम की धारा 13 या 13B के अंतर्गत तलाक की कार्यवाही प्रारंभ की जाती है। इस प्रक्रिया में स्थायी गुजारा भत्ता (Alimony) और मासूम बच्चों की अभिरक्षा (Child Custody) सबसे नाजुक और अहम पहलू होते हैं।",
+                courtStrategy: "इटावा फैमिली कोर्ट में आपसी सहमति से तलाक (Mutual Consent - 13B) में 6 महीने के कूलिंग-ऑफ पीरियड को सुप्रीम कोर्ट के अमरिंदर सिंह निर्णय के अनुसार वेव-ऑफ (Wave-off) कराकर त्वरित डिक्री प्राप्त करना। संतान अभिरक्षा में केवल बच्चे के सर्वांगीण कल्याण (Welfare of the Child) को आधार बनाकर पैरवी करना।",
+                subTopics: [
+                    { title: "Mutual Consent Divorce (आपसी सहमति से तलाक)", desc: "दोनों पक्षों की सहमति से 13B के तहत न्यूनतम समय में विवाद-मुक्त सम्मानजनक अलगाव की कानूनी प्रक्रिया।" },
+                    { title: "Contested Divorce (विवादित तलाक के आधार)", desc: "क्रूरता (Cruelty), परित्याग (Desertion) या मानसिक अस्वस्थता के आधार पर एकपक्षीय तलाक का मुकदमा।" },
+                    { title: "Child Custody Battles (संतान की कस्टडी)", desc: "माता अथवा पिता द्वारा बच्चे की पढ़ाई, परवरिश और भविष्य को देखते हुए कानूनी अभिरक्षा हासिल करना।" },
+                    { title: "Visitation Rights for Father / Mother", desc: "कस्टडी न मिलने की स्थिति में भी बच्चे से नियमित मिलने, फोन पर बात करने और छुट्टियों में साथ रखने का अधिकार।" },
+                    { title: "Permanent Alimony Settlement", desc: "भविष्य के सभी विवादों को सदा के लिए समाप्त करते हुए एकमुश्त स्थायी भत्ते का कानूनी समझौता तैयार करना।" }
+                ],
+                faqs: [
+                    { q: "आपसी सहमति से तलाक होने में इटावा कोर्ट में कितना समय लगता है?", a: "यदि सभी शर्तें तय हैं और 6 माह की छूट का आवेदन स्वीकार हो जाए, तो 1 से 2 महीने के भीतर प्रथम व द्वितीय प्रस्ताव की गवाही कराकर डिक्री प्राप्त की जा सकती है।" }
+                ]
+            },
+            {
+                id: "cheque-bounce-138",
+                slug: "cheque-bounce-138",
+                num: 13,
+                titleHi: "चेक बाउंस वाद (धारा 138 पराक्रम्य लिखित अधिनियम)",
+                titleEn: "Cheque Bounce (138 NI)",
+                category: "civil",
+                categoryName: "सिविल, संपत्ति व क्लेम",
+                icon: "credit-card",
+                metaTitle: "Cheque Bounce Lawyer in Etawah | 138 NI Act | Advocate Vikas Yadav",
+                metaDesc: "चेक बाउंस होने पर लीगल नोटिस भेजने, फंसा हुआ पैसा वसूलने या फर्जी चेक बाउंस केस से बचने के लिए Etawah में Advocate Vikas Yadav से संपर्क करें।",
+                searchTags: "cheque bounce lawyer etawah, section 138 ni act etawah, legal notice for cheque bounce, advocate vikas yadav cheque bounce, cheque bounce recovery etawah",
+                summary: "व्यापारिक अथवा व्यक्तिगत लेनदेन में बैंक खाते में अपर्याप्त राशि होने पर चेक बाउंस होना परक्राम्य लिखत अधिनियम की धारा 138 के तहत एक संज्ञेय अपराध है। इटावा न्यायालय में समयबद्ध विधिक नोटिस भेजने से लेकर अदालत में समन और पैसे की त्वरित वसूली की प्रक्रिया।",
+                courtStrategy: "चेक बाउंस मामलों में समयसीमा (Limitation) सर्वोपरि है—बैंक मेमो मिलने के 30 दिन में लीगल नोटिस भेजना और नोटिस प्राप्ति के 15 दिन बाद अगले 30 दिन में परिवाद दाखिल करना। धारा 143A के तहत केस की शुरुआत में ही 20% अंतरिम मुआवजा अदालत से दिलवाना।",
+                subTopics: [
+                    { title: "15-Day Statutory Legal Notice Drafting", desc: "चेक बाउंस होते ही तकनीकी खामियों से रहित सटीक कानूनी नोटिस तैयार कर पंजीकृत डाक से तामील कराना।" },
+                    { title: "Sec 143A - 20% Interim Compensation", desc: "परिवादी को राहत दिलाने हेतु कोर्ट से आरोपी द्वारा 20% रकम अग्रिम जमा करने का आदेश पारित कराना।" },
+                    { title: "Blank Signed Cheque Misuse Defense", desc: "सुरक्षा (Security) हेतु दिए गए हस्ताक्षरित खाली चेक के दुरुपयोग के विरुद्ध ठोस विधिक बचाव।" },
+                    { title: "Cheque Bounce Trial & Cross Examination", desc: "ऋण की कानूनी वैधता (Legally Enforceable Debt) को चुनौती देते हुए परिवादी से वित्तीय स्रोतों पर जिरह।" },
+                    { title: "Warrants & Settlement in Lok Adalat", desc: "हाजिर न होने पर गैर-जमानती वारंट जारी कराना अथवा राष्ट्रीय लोक अदालत में समझौते के जरिए पूर्ण भुगतान पाना।" }
+                ],
+                faqs: [
+                    { q: "चेक बाउंस होने पर क्या आरोपी को जेल हो सकती है?", a: "हाँ, धारा 138 के अंतर्गत 2 वर्ष तक का कारावास अथवा चेक की राशि का दोगुना जुर्माना अथवा दोनों का प्रावधान है।" }
+                ]
+            },
+            {
+                id: "execution-petitions",
+                slug: "execution-petitions",
+                num: 14,
+                titleHi: "इशराया / डिक्री निष्पादन (Order 21 CPC)",
+                titleEn: "Execution (Order 21 CPC)",
+                category: "civil",
+                categoryName: "सिविल, संपत्ति व क्लेम",
+                icon: "stamp",
+                metaTitle: "Property & Civil Execution Lawyer in Etawah | Advocate Vikas Yadav",
+                metaDesc: "कोर्ट का फैसला (Decree) जीतने के बाद ऑर्डर 21 के तहत डिक्री लागू करवाने, कुर्की या रिकवरी के लिए Etawah में Advocate Vikas Yadav की लीगल सर्विस लें।",
+                searchTags: "execution petition lawyer etawah, order 21 cpc etawah court, property kurki lawyer, civil decree execution, advocate vikas yadav civil cases",
+                summary: "अदालत से दीवानी मुकदमा जीतना केवल आधी लड़ाई है; असली चुनौती उस डिक्री को धरातल पर लागू कराना होता है। सिविल प्रक्रिया संहिता (CPC) के आदेश 21 के अंतर्गत संपत्ति की कुर्की, नीलामी अथवा कब्जा प्राप्त करने हेतु निष्पादन वाद (Execution Petition) दायर किया जाता है।",
+                courtStrategy: "इटावा दीवानी अदालत में विपक्षी द्वारा निष्पादन को लटकाने के लिए डाली जाने वाली तृतीय पक्षीय आपत्तियों (Third-Party Objections - Order 21 Rule 97/99) का त्वरित विधिक निस्तारण। नाजिर और पुलिस बल की सहायता से अमीन द्वारा वास्तविक मौके पर कब्जा दखल दिलवाना।",
+                subTopics: [
+                    { title: "Property Attachment / Kurki (कुर्की की कार्यवाही)", desc: "डिक्री की रकम न चुकाने पर देनदार की चल-अचल संपत्ति को चिह्नित कर न्यायालय से कुर्क कराना।" },
+                    { title: "Civil Arrest Warrants against Judgment Debtor", desc: "जानबूझकर भुगतान न करने वाले बकायेदार को सिविल जेल भेजने हेतु गिरफ्तारी वारंट की मांग।" },
+                    { title: "Handling Third-Party Objections", desc: "केस को अनिश्चितकाल तक अटकाने के लिए रिश्तेदारों द्वारा लगाए गए फर्जी दावों को कानूनी रूप से निरस्त कराना।" },
+                    { title: "Police Assistance for Possession (कब्जा दखल)", desc: "मकान, दुकान या खेत की डिक्री के बाद कोर्ट अमीन और पर्याप्त पुलिस बल के साथ भौतिक कब्जा प्राप्त करना।" },
+                    { title: "Decree Money Recovery & Bank Attachment", desc: "विपक्षी के बैंक खातों को फ्रीज करवाकर अथवा वेतन से कटौती करवाकर डिक्री की राशि की वसूली।" }
+                ],
+                faqs: [
+                    { q: "सिविल कोर्ट की डिक्री को निष्पादित कराने की समयसीमा क्या है?", a: "परिसीमा अधिनियम के तहत डिक्री पारित होने की तिथि से 12 वर्ष के भीतर निष्पादन याचिका दाखिल की जा सकती है।" }
+                ]
+            },
+            {
+                id: "mact-accident",
+                slug: "mact-accident",
+                num: 15,
+                titleHi: "मोटर दुर्घटना दावा अधिकरण (MACT Claims)",
+                titleEn: "MACT Claims",
+                category: "civil",
+                categoryName: "सिविल, संपत्ति व क्लेम",
+                icon: "ambulance",
+                metaTitle: "Motor Accident Claim (MACT) Lawyer in Etawah | Advocate Vikas Yadav",
+                metaDesc: "सड़क दुर्घटना में मृत्यु या चोट लगने पर MACT Tribunal Etawah से उचित बीमा क्लेम (Compensation) प्राप्त करने के लिए Advocate Vikas Yadav से संपर्क करें।",
+                searchTags: "motor accident claim in etawah, mact court etawah, accident compensation lawyer etawah, accident death claim, advocate vikas yadav mact",
+                summary: "सड़क दुर्घटना में किसी व्यक्ति की दुखद मृत्यु हो जाने अथवा गंभीर रूप से दिव्यांग होने की दशा में पीड़ित परिवार को बीमा कंपनी से उचित आर्थिक क्षतिपूर्ति दिलाना मोटर यान अधिनियम (Motor Vehicles Act) का प्रमुख उद्देश्य है। इटावा एमएसीटी ट्रिब्यूनल में दावों का सशक्त प्रतिनिधित्व।",
+                courtStrategy: "बीमा कंपनियों द्वारा प्रायः फर्जी ड्राइविंग लाइसेंस, बिना परमिट अथवा लापरवाही में मृतक की गलती (Contributory Negligence) का बहाना बनाकर क्लेम खारिज करने का प्रयास किया जाता है। पुलिस की विस्तृत दुर्घटना रिपोर्ट (DAR), पंचनामा और वास्तविक आय प्रमाण प्रस्तुत कर उच्चतम मुआवजा सुनिश्चित करना।",
+                subTopics: [
+                    { title: "MACT Claim Filing Process", desc: "दुर्घटना के तुरंत बाद इटावा मोटर दुर्घटना अधिकरण में निर्धारित प्रपत्रों व साक्ष्यों के साथ दावा प्रस्तुत करना।" },
+                    { title: "Accidental Death Compensation", desc: "मृतक की आयु, आश्रितों की संख्या और भावी आय संभावनाओं (Future Prospects) के आधार पर अधिकतम क्लेम गणना।" },
+                    { title: "Permanent / Partial Disability Claims", desc: "सीएमओ द्वारा जारी दिव्यांगता प्रमाणपत्र के आधार पर आजीविका की स्थायी हानि का मुआवजा प्राप्त करना।" },
+                    { title: "Hit and Run Case Claims", desc: "अज्ञात वाहन द्वारा दुर्घटना की स्थिति में सरकारी सोलेशियम फंड एवं विशेष योजनाओं से आर्थिक सहायता दिलाना।" },
+                    { title: "Challenging Insurance Company Rejections", desc: "बीमा कंपनी की तकनीकी आपत्तियों को साक्ष्यों व हाईकोर्ट/सुप्रीम कोर्ट की नजीरों से निरस्त कराना।" }
+                ],
+                faqs: [
+                    { q: "सड़क हादसे के कितने समय के भीतर क्लेम दाखिल करना चाहिए?", a: "मोटर वाहन संशोधन के पश्चात दुर्घटना की तिथि से 6 माह के भीतर दावा याचिका दायर करना आवश्यक है, अतः बिना विलंब किए विधिक प्रक्रिया शुरू करनी चाहिए।" }
+                ]
+            },
+            {
+                id: "rent-eviction",
+                slug: "rent-eviction",
+                num: 16,
+                titleHi: "किराया नियंत्रण व बेदखली वाद (Rent Control & Eviction)",
+                titleEn: "Rent & Eviction",
+                category: "civil",
+                categoryName: "सिविल, संपत्ति व क्लेम",
+                icon: "key",
+                metaTitle: "Property Eviction & Rent Case Lawyer in Etawah | Advocate Vikas Yadav",
+                metaDesc: "मकान मालिक और किरायेदार के विवाद, दुकान या मकान खाली करवाने (Eviction) और बकाया किराया वसूलने के लिए Etawah में Advocate Vikas Yadav से सहायता लें।",
+                searchTags: "rent control lawyer etawah, eviction suit etawah court, kirayedar ko kaise nikale, tenant dispute lawyer, advocate vikas yadav property lawyer",
+                summary: "दुकान अथवा आवासीय मकान पर अनधिकृत कब्जा, किराया न देना या किरायेदारी समाप्त होने के बाद भी परिसर खाली न करना संपत्ति मालिकों के लिए सिरदर्द बन जाता है। उत्तर प्रदेश शहरी भवन किराया नियंत्रण अधिनियम एवं नए विधिक प्रावधानों के अंतर्गत परिसर को त्वरित खाली कराना।",
+                courtStrategy: "इटावा दीवानी अथवा लघुवाद न्यायालय (SCC Court) में मकान मालिक की वास्तविक आवश्यकता (Bonafide Requirement) को ठोस रूप से स्थापित करना। किरायेदार द्वारा धारा 20(4) के तहत केवल किराया जमा कर बेदखली से बचने के हथकंडों का समयबद्ध विधिक समाधान।",
+                subTopics: [
+                    { title: "Eviction Suit Against Tenant (बेदखली का मुकदमा)", desc: "किरायेदारी समझौता समाप्त होने पर धारा 106 संपत्ति अंतरण अधिनियम के तहत विधिक नोटिस देकर वाद प्रस्तुत करना।" },
+                    { title: "Landlord’s Bonafide Requirement", desc: "मकान मालिक या उसके परिवार के बच्चों के व्यवसाय/निवास हेतु दुकान या मकान की अनिवार्य आवश्यकता साबित करना।" },
+                    { title: "Non-Payment of Rent Arrears", desc: "लगातार कई महीनों का किराया न देने पर ब्याज सहित बकाए की वसूली और संपत्ति से बेदखली का आदेश पाना।" },
+                    { title: "Illegal Sub-letting by Tenant", desc: "मूल किरायेदार द्वारा बिना मकान मालिक की अनुमति के किसी तीसरे व्यक्ति को दुकान सौंपने पर तत्काल निष्कासन।" },
+                    { title: "Drafting Registered Rent Agreements", desc: "भविष्य के विवादों से बचने हेतु कड़े विधिक नियमों से युक्त निबंधित किराया नामा तैयार करना।" }
+                ],
+                faqs: [
+                    { q: "यदि किरायेदार कई वर्षों से दुकान खाली नहीं कर रहा तो क्या रास्ता है?", a: "किराया अनुबंध की शर्तों के अनुसार विधिक नोटिस भेजकर लघुवाद न्यायालय (Judge Small Causes Court) इटावा में बेदखली का वाद दायर कर परिसर खाली कराया जा सकता है।" }
+                ]
             }
-            const m = String(Math.floor(remainingSeconds / 60)).padStart(2, '0');
-            const s = String(remainingSeconds % 60).padStart(2, '0');
-            if (countdownEl) countdownEl.innerText = m + ":" + s;
-        }, 1000);
-
-        // 2. Social Proof Live Purchase Toast
-        const recentBuyers = [
-            { name: "Amit Sharma", city: "Delhi", detail: "Purchased Blueprint PDF via UPI (₹399)" },
-            { name: "Rahul Verma", city: "Lucknow", detail: "Booked 1-on-1 Legal Consultancy (₹399)" },
-            { name: "Priya Singh", city: "Mumbai", detail: "Unlocked 2X Maintenance Drafts (₹399)" },
-            { name: "Vikram Patel", city: "Jaipur", detail: "Booked 1-on-1 Strategy Session (₹399)" },
-            { name: "Rajesh Kumar", city: "Bengaluru", detail: "Purchased Fast-Track Course via UPI (₹399)" },
-            { name: "Neha Gupta", city: "Indore", detail: "Booked Consultancy + Free PDF (₹399)" }
         ];
-        let buyerIndex = 0;
 
-        function showPurchaseToast() {
-            const toast = document.getElementById('purchaseToast');
-            const userEl = document.getElementById('toastUser');
-            const detailEl = document.getElementById('toastDetail');
-            const item = recentBuyers[buyerIndex % recentBuyers.length];
+        // RENDER: Home Page View
+        function renderHomeView() {
+            return `
+                <!-- Hero Section -->
+                <section class="relative bg-gradient-to-b from-navy-900 via-navy-950 to-navy-950 py-16 sm:py-24 border-b border-slate-800 overflow-hidden">
+                    <!-- Background ambient glow -->
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-64 bg-gold-500/5 blur-[120px] pointer-events-none rounded-full"></div>
+                    
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                            
+                            <!-- Left Col: Copy & Pitch -->
+                            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs font-semibold tracking-wide">
+                                    <i data-lucide="award" class="w-4 h-4"></i>
+                                    <span>इटावा जिला एवं सत्र न्यायालय में निर्भीक व अनुभवी विधिक पैरवी</span>
+                                </div>
+                                
+                                <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold font-cinzel text-white leading-tight tracking-tight">
+                                    न्याय आपका अधिकार है, <br>
+                                    <span class="gold-gradient-text">इसकी रक्षा हमारा संकल्प है।</span>
+                                </h1>
+                                
+                                <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                                    मैं <strong>एडवोकेट विकास यादव</strong>, जिला एवं सत्र न्यायालय इटावा में क्रिमिनल डिफेंस, जमानत (Bail), एनडीपीएस एक्ट, पारिवारिक विवाद, 498A, चेक बाउंस व सिविल मुकदमों में निष्पक्ष एवं परिणामोन्मुखी विधिक प्रतिनिधित्व प्रदान करता हूँ।
+                                </p>
+                                
+                                <!-- Fast CTA Bar -->
+                                <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+                                    <a href="tel:+919876543210" class="bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-400 hover:to-gold-500 text-navy-950 font-bold px-6 py-3.5 rounded-xl shadow-lg transition-all flex items-center gap-2">
+                                        <i data-lucide="phone-call" class="w-5 h-5"></i>
+                                        <span>तत्काल सहायता कॉल</span>
+                                    </a>
+                                    <button onclick="openBookingModal()" class="bg-slate-800/90 hover:bg-slate-700 text-white border border-slate-700 px-6 py-3.5 rounded-xl font-semibold transition-colors flex items-center gap-2">
+                                        <i data-lucide="calendar" class="w-5 h-5 text-gold-400"></i>
+                                        <span>चैंबर अप्वाइंटमेंट बुक करें</span>
+                                    </button>
+                                </div>
 
-            userEl.innerText = item.name + " (" + item.city + ")";
-            detailEl.innerText = item.detail;
-            toast.classList.remove('opacity-0', 'translate-y-10');
-            toast.classList.add('opacity-100', 'translate-y-0');
+                                <!-- Trust Badges -->
+                                <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-800/80 max-w-lg mx-auto lg:mx-0 text-left">
+                                    <div>
+                                        <div class="text-xl sm:text-2xl font-bold font-cinzel text-gold-400">16+</div>
+                                        <div class="text-xs text-slate-400">मुख्य विधिक विषय</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-xl sm:text-2xl font-bold font-cinzel text-gold-400">100%</div>
+                                        <div class="text-xs text-slate-400">पारदर्शी विधिक परामर्श</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-xl sm:text-2xl font-bold font-cinzel text-gold-400">चैंबर 1</div>
+                                        <div class="text-xs text-slate-400">कचहरी गेट, इटावा</div>
+                                    </div>
+                                </div>
+                            </div>
 
-            setTimeout(() => {
-                toast.classList.remove('opacity-100', 'translate-y-0');
-                toast.classList.add('opacity-0', 'translate-y-10');
-            }, 3500);
+                            <!-- Right Col: Court Card Profile -->
+                            <div class="lg:col-span-5">
+                                <div class="bg-navy-900 border border-gold-500/30 rounded-2xl p-6 sm:p-8 shadow-2xl relative gold-border-glow">
+                                    <div class="flex items-center gap-4 border-b border-slate-800 pb-5 mb-5">
+                                        <div class="w-16 h-16 rounded-full bg-gradient-to-br from-gold-400 to-navy-900 p-0.5 flex-shrink-0">
+                                            <div class="w-full h-full bg-navy-950 rounded-full flex items-center justify-center">
+                                                <i data-lucide="scale" class="w-8 h-8 text-gold-400"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h2 class="text-xl font-bold font-cinzel text-white">ADVOCATE VIKAS YADAV</h2>
+                                            <p class="text-xs text-gold-400 font-medium">अधिवक्ता - बार एसोसिएशन इटावा</p>
+                                            <p class="text-xs text-slate-400 mt-0.5">District & Sessions Court, Etawah (U.P.)</p>
+                                        </div>
+                                    </div>
 
-            buyerIndex++;
+                                    <div class="space-y-3 text-xs text-slate-300">
+                                        <div class="flex items-start gap-2.5">
+                                            <i data-lucide="map-pin" class="w-4 h-4 text-gold-400 mt-0.5 flex-shrink-0"></i>
+                                            <span><strong>कार्यालय:</strong> चैंबर संख्या 1, ईदगाह रोड गेट, कचहरी परिसर, इटावा (उत्तर प्रदेश) - 206001</span>
+                                        </div>
+                                        <div class="flex items-center gap-2.5">
+                                            <i data-lucide="clock" class="w-4 h-4 text-gold-400 flex-shrink-0"></i>
+                                            <span><strong>कोर्ट समय:</strong> प्रातः 10:00 बजे से सायं 05:00 बजे (सोमवार से शनिवार)</span>
+                                        </div>
+                                        <div class="flex items-center gap-2.5">
+                                            <i data-lucide="phone" class="w-4 h-4 text-gold-400 flex-shrink-0"></i>
+                                            <span><strong>हेल्पलाइन:</strong> +91 98765 43210</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-6 pt-5 border-t border-slate-800">
+                                        <div class="text-xs text-slate-400 mb-2 font-medium">सीधा विषय खोजें (Quick Filter):</div>
+                                        <div class="flex flex-wrap gap-1.5">
+                                            <a href="#bail-applications" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-gold-500/20 text-slate-200 hover:text-gold-400 text-xs transition-colors">Bail</a>
+                                            <a href="#ndps-act" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-gold-500/20 text-slate-200 hover:text-gold-400 text-xs transition-colors">NDPS</a>
+                                            <a href="#crimes-against-women" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-gold-500/20 text-slate-200 hover:text-gold-400 text-xs transition-colors">498A</a>
+                                            <a href="#divorce-custody" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-gold-500/20 text-slate-200 hover:text-gold-400 text-xs transition-colors">Divorce</a>
+                                            <a href="#cheque-bounce-138" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-gold-500/20 text-slate-200 hover:text-gold-400 text-xs transition-colors">Cheque 138</a>
+                                            <a href="#mact-accident" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-gold-500/20 text-slate-200 hover:text-gold-400 text-xs transition-colors">MACT</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Interactive Filter & Live Search Section -->
+                <section class="py-12 bg-navy-900 border-b border-slate-800">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div class="flex flex-col md:flex-row items-center justify-between gap-4 mb-8">
+                            <div>
+                                <h2 class="text-2xl font-bold font-cinzel text-white">विधिक कार्यक्षेत्र एवं सेवाएं (16 मुख्य विषय)</h2>
+                                <p class="text-sm text-slate-400">अपनी समस्या के अनुसार संबंधित कानूनी पृष्ठ पर जाएँ</p>
+                            </div>
+                            
+                            <!-- Search & Category Filters -->
+                            <div class="flex flex-wrap items-center gap-2 w-full md:w-auto">
+                                <div class="relative flex-grow sm:flex-grow-0 sm:w-64">
+                                    <i data-lucide="search" class="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                                    <input type="text" id="homeSearchInput" oninput="filterHomeGrid(this.value)" placeholder="केस या धारा खोजें..." 
+                                        class="w-full bg-slate-800 border border-slate-700 rounded-lg pl-9 pr-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-gold-500">
+                                </div>
+                                <div class="flex items-center gap-1 text-xs">
+                                    <button onclick="filterCategory('all')" id="cat-all" class="cat-filter-btn px-3 py-2 rounded-lg bg-gold-500 text-navy-950 font-bold transition-colors">सभी (16)</button>
+                                    <button onclick="filterCategory('criminal')" id="cat-criminal" class="cat-filter-btn px-3 py-2 rounded-lg bg-slate-800 text-slate-300 hover:text-white transition-colors">आपराधिक</button>
+                                    <button onclick="filterCategory('special')" id="cat-special" class="cat-filter-btn px-3 py-2 rounded-lg bg-slate-800 text-slate-300 hover:text-white transition-colors">विशेष/साइबर</button>
+                                    <button onclick="filterCategory('family')" id="cat-family" class="cat-filter-btn px-3 py-2 rounded-lg bg-slate-800 text-slate-300 hover:text-white transition-colors">पारिवारिक</button>
+                                    <button onclick="filterCategory('civil')" id="cat-civil" class="cat-filter-btn px-3 py-2 rounded-lg bg-slate-800 text-slate-300 hover:text-white transition-colors">सिविल/क्लेम</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 16 Topics Grid -->
+                        <div id="topicsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                            ${legalTopics.map(topic => `
+                                <div class="topic-card bg-navy-950/80 border border-slate-800 hover:border-gold-500/50 rounded-xl p-5 flex flex-col justify-between transition-all hover:-translate-y-1 hover:shadow-xl group" data-category="${topic.category}" data-search="${topic.titleHi.toLowerCase()} ${topic.titleEn.toLowerCase()} ${topic.searchTags.toLowerCase()}">
+                                    <div>
+                                        <div class="flex items-center justify-between mb-3">
+                                            <span class="text-[11px] font-bold text-gold-400 bg-gold-500/10 px-2 py-0.5 rounded border border-gold-500/20">
+                                                विषय #${topic.num}
+                                            </span>
+                                            <div class="p-2 rounded-lg bg-slate-800/80 text-gold-400 group-hover:bg-gold-500 group-hover:text-navy-950 transition-colors">
+                                                <i data-lucide="${topic.icon}" class="w-4 h-4"></i>
+                                            </div>
+                                        </div>
+                                        <h3 class="text-base font-bold text-white group-hover:text-gold-400 transition-colors mb-2 leading-snug">
+                                            ${topic.titleHi}
+                                        </h3>
+                                        <p class="text-xs text-slate-400 line-clamp-3 mb-4 leading-relaxed">
+                                            ${topic.summary}
+                                        </p>
+                                    </div>
+                                    <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between">
+                                        <span class="text-[10px] text-slate-500 uppercase tracking-wider">${topic.categoryName}</span>
+                                        <a href="#${topic.slug}" class="text-xs font-semibold text-gold-400 hover:text-gold-300 flex items-center gap-1 group-hover:translate-x-0.5 transition-transform">
+                                            विस्तार से पढ़ें <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Chamber & Etawah Court Information Section -->
+                <section class="py-16 bg-navy-950">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div class="bg-gradient-to-r from-navy-900 to-slate-900 border border-slate-800 rounded-2xl p-8 sm:p-12 shadow-2xl">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                                <div>
+                                    <span class="text-gold-400 text-xs font-bold uppercase tracking-wider block mb-2">कचहरी चैंबर परामर्श</span>
+                                    <h3 class="text-2xl sm:text-3xl font-bold font-cinzel text-white mb-4">
+                                        एडवोकेट विकास यादव से सीधे कोर्ट में मिलें
+                                    </h3>
+                                    <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                                        इटावा दीवानी एवं कलेक्ट्रेट परिसर में यदि आपका कोई मुकदमा चल रहा है, या कोई नया केस अथवा जमानत दाखिल करनी है, तो बिना किसी बिचौलिए के सीधे चैंबर पर आकर अपनी केस फाइल का निष्पक्ष परीक्षण करवाएं।
+                                    </p>
+                                    <div class="space-y-3 text-xs text-slate-300 mb-6">
+                                        <div class="flex items-center gap-2">
+                                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
+                                            <span>सत्र न्यायालय, सीजेएम, जेएम व फैमिली कोर्ट में सीधी पैरवी</span>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
+                                            <span>सभी  विधिक विषयों में पारदर्शी एवं दस्तावेजी परामर्श</span>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
+                                            <span>इलाहाबाद उच्च न्यायालय में रिट एवं अपील की विधिक ड्राफ्टिंग</span>
+                                        </div>
+                                    </div>
+                                    <button onclick="openBookingModal()" class="bg-gold-500 hover:bg-gold-400 text-navy-950 font-bold px-6 py-3 rounded-lg text-sm transition-colors">
+                                        अप्वाइंटमेंट बुक करें
+                                    </button>
+                                </div>
+                                <div class="bg-navy-950/90 border border-slate-700/80 rounded-xl p-6">
+                                    <h4 class="text-white font-cinzel font-bold text-base mb-4 pb-2 border-b border-slate-800">
+                                        कार्यालय एवं संपर्क विवरण
+                                    </h4>
+                                    <div class="space-y-4 text-xs text-slate-300">
+                                        <div>
+                                            <span class="text-slate-500 block">अधिवक्ता का नाम:</span>
+                                            <strong class="text-slate-100 text-sm">Advocate Vikas Yadav</strong>
+                                        </div>
+                                        <div>
+                                            <span class="text-slate-500 block">स्थान / पता:</span>
+                                            <span class="text-slate-200">चैंबर नं. 1, ईदगाह रोड गेट के सामने, जिला एवं सत्र न्यायालय, इटावा (उ.प्र.) - 206001</span>
+                                        </div>
+                                        <div>
+                                            <span class="text-slate-500 block">कार्य दिवस:</span>
+                                            <span class="text-slate-200">प्रत्येक कार्य दिवस (सोमवार - शनिवार), प्रातः 10:00 से सायं 5:00 तक</span>
+                                        </div>
+                                        <div>
+                                            <span class="text-slate-500 block">हेल्पलाइन:</span>
+                                            <a href="tel:+919876543210" class="text-gold-400 font-bold text-sm">+91 98765 43210</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            `;
         }
-        setTimeout(showPurchaseToast, 4000);
-        setInterval(showPurchaseToast, 10000);
 
-        // 3. UPI Payment Modal Controls
-        function openPaymentModal(planTitle) {
-            if (planTitle) {
-                const titleEl = document.getElementById('modalPlanTitle');
-                if (titleEl) titleEl.innerText = planTitle;
-            }
-            document.getElementById('paymentModal').classList.remove('hidden');
+        // RENDER: Dedicated Legal Topic View (For all 16 pages)
+        function renderTopicView(topic) {
+            return `
+                <div class="bg-navy-950 py-10 sm:py-16">
+                    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                        
+                        <!-- Breadcrumb Navigation -->
+                        <nav class="flex items-center gap-2 text-xs text-slate-400 mb-6">
+                            <a href="#home" class="hover:text-gold-400 transition-colors">होम</a>
+                            <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+                            <span class="text-slate-500">${topic.categoryName}</span>
+                            <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+                            <span class="text-gold-400 font-medium">विषय #${topic.num}</span>
+                        </nav>
+
+                        <!-- SEO & Meta Inspector Card (Visual Blueprint Verification) -->
+                        <div class="mb-8 bg-slate-900/90 border border-gold-500/30 rounded-xl p-4 sm:p-5 text-xs text-slate-300">
+                            <div class="flex items-center justify-between border-b border-slate-800 pb-2 mb-3">
+                                <span class="font-bold text-gold-400 flex items-center gap-1.5 uppercase tracking-wider text-[11px]">
+                                    <i data-lucide="code" class="w-3.5 h-3.5"></i> Google Search & SEO Blueprint Metadata
+                                </span>
+                                <span class="text-[10px] text-slate-500">Target: Etawah District Court</span>
+                            </div>
+                            <div class="space-y-2">
+                                <div>
+                                    <strong class="text-slate-400">Meta Title:</strong> 
+                                    <span class="text-emerald-400 font-mono">${topic.metaTitle}</span>
+                                </div>
+                                <div>
+                                    <strong class="text-slate-400">Meta Description:</strong> 
+                                    <span class="text-slate-300">${topic.metaDesc}</span>
+                                </div>
+                                <div>
+                                    <strong class="text-slate-400">Search Tags / Keywords:</strong> 
+                                    <div class="flex flex-wrap gap-1 mt-1">
+                                        ${topic.searchTags.split(',').map(tag => `
+                                            <span class="bg-slate-800 text-gold-400/90 px-2 py-0.5 rounded text-[10px] font-mono">${tag.trim()}</span>
+                                        `).join('')}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Page Header -->
+                        <div class="border-b border-slate-800 pb-8 mb-8">
+                            <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-gold-500/10 text-gold-400 text-xs font-semibold mb-3">
+                                <i data-lucide="${topic.icon}" class="w-4 h-4"></i>
+                                <span>विधिक सेवा #${topic.num} • इटावा न्यायालय</span>
+                            </div>
+                            <h1 class="text-2xl sm:text-4xl font-extrabold font-cinzel text-white mb-4 leading-tight">
+                                ${topic.titleHi}
+                            </h1>
+                            <p class="text-sm text-slate-400 font-medium">
+                                मुख्य अधिवक्ता: <strong class="text-white">Advocate Vikas Yadav</strong> | जिला एवं सत्र न्यायालय, इटावा (उत्तर प्रदेश)
+                            </p>
+                        </div>
+
+                        <!-- Overview Summary Box -->
+                        <div class="bg-navy-900 border border-slate-800 rounded-xl p-6 sm:p-8 mb-8 leading-relaxed text-sm text-slate-200">
+                            <h2 class="text-lg font-bold font-cinzel text-gold-400 mb-3 flex items-center gap-2">
+                                <i data-lucide="book-open" class="w-5 h-5"></i>
+                                विधिक विश्लेषण एवं परिचय
+                            </h2>
+                            <p>${topic.summary}</p>
+                        </div>
+
+                        <!-- Practical Court Strategy in Etawah -->
+                        <div class="bg-gradient-to-r from-navy-900 via-slate-900 to-navy-900 border-l-4 border-gold-500 rounded-r-xl p-6 mb-10 shadow-lg">
+                            <h3 class="text-base font-bold text-white mb-2 flex items-center gap-2">
+                                <i data-lucide="gavel" class="w-4 h-4 text-gold-400"></i>
+                                <span>इटावा जिला न्यायालय में हमारी विधिक रणनीति (Court Strategy):</span>
+                            </h3>
+                            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                                ${topic.courtStrategy}
+                            </p>
+                        </div>
+
+                        <!-- 5 to 7 Main Sub-Topics Breakdown -->
+                        <div class="mb-12">
+                            <h3 class="text-xl font-bold font-cinzel text-white mb-6 flex items-center gap-2">
+                                <i data-lucide="layers" class="w-5 h-5 text-gold-400"></i>
+                                <span>इस विषय के अंतर्गत मुख्य कानूनी बिंदु (${topic.subTopics.length} Sub-Topics)</span>
+                            </h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                ${topic.subTopics.map((sub, idx) => `
+                                    <div class="bg-navy-900/70 border border-slate-800 hover:border-slate-700 rounded-xl p-5 transition-all">
+                                        <div class="flex items-center gap-2 mb-2">
+                                            <span class="w-5 h-5 rounded-full bg-gold-500/20 text-gold-400 text-xs font-bold flex items-center justify-center">
+                                                ${idx + 1}
+                                            </span>
+                                            <h4 class="text-sm font-bold text-white">${sub.title}</h4>
+                                        </div>
+                                        <p class="text-xs text-slate-400 leading-relaxed pl-7">
+                                            ${sub.desc}
+                                        </p>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+
+                        <!-- Frequently Asked Questions (Accordion) -->
+                        <div class="mb-12">
+                            <h3 class="text-lg font-bold font-cinzel text-white mb-4 flex items-center gap-2">
+                                <i data-lucide="help-circle" class="w-5 h-5 text-gold-400"></i>
+                                <span>अक्सर पूछे जाने वाले विधिक प्रश्न (FAQs)</span>
+                            </h3>
+                            <div class="space-y-3">
+                                ${topic.faqs.map(faq => `
+                                    <div class="bg-navy-900/90 border border-slate-800 rounded-lg p-4">
+                                        <h4 class="text-xs sm:text-sm font-bold text-slate-100 mb-1 flex items-start gap-2">
+                                            <span class="text-gold-400 font-bold">प्र.</span>
+                                            <span>${faq.q}</span>
+                                        </h4>
+                                        <p class="text-xs text-slate-400 leading-relaxed pl-4">
+                                            ${faq.a}
+                                        </p>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+
+                        <!-- Dedicated Bottom Consultation Box -->
+                        <div class="bg-gradient-to-br from-navy-900 via-slate-900 to-navy-900 border border-gold-500/30 rounded-2xl p-6 sm:p-8 text-center relative overflow-hidden">
+                            <h3 class="text-xl sm:text-2xl font-bold font-cinzel text-white mb-2">
+                                ${topic.titleHi} में तुरंत विधिक सहायता चाहिए?
+                            </h3>
+                            <p class="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto mb-6">
+                                समय पर उठाई गई सही विधिक आपत्ति आपके केस का रुख बदल सकती है। एडवोकेट विकास यादव से इटावा कोर्ट चैंबर में मिलकर केस पर विचार-विमर्श करें।
+                            </p>
+                            <div class="flex flex-wrap items-center justify-center gap-3">
+                                <a href="tel:+919876543210" class="bg-gold-500 hover:bg-gold-400 text-navy-950 font-bold px-5 py-2.5 rounded-lg text-xs flex items-center gap-2 transition-colors">
+                                    <i data-lucide="phone" class="w-4 h-4"></i> सीधे बात करें: +91 98765 43210
+                                </a>
+                                <button onclick="openBookingModalForTopic('${topic.titleEn}')" class="bg-slate-800 hover:bg-slate-700 text-white border border-slate-600 px-5 py-2.5 rounded-lg font-semibold text-xs transition-colors">
+                                    इस केस के लिए अप्वाइंटमेंट बुक करें
+                                </button>
+                                <a href="#home" class="text-slate-400 hover:text-white text-xs px-3 py-2">
+                                    ← सभी  विषयों की सूची पर लौटें
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            `;
         }
 
-        function closePaymentModal() {
-            document.getElementById('paymentModal').classList.add('hidden');
-        }
+        // CLIENT ROUTER
+        function router() {
+            const hash = window.location.hash.replace('#', '') || 'home';
+            const app = document.getElementById('app');
+            const metaTitleTag = document.title;
+            const metaDescTag = document.getElementById('metaDescription');
+            const metaKeywordsTag = document.getElementById('metaKeywords');
 
-        function payDirectUPI() {
-            const upiLink = "upi://pay?pa=9410851090-n532@ybl&pn=VIKAS%20YADAV&am=399.00&cu=INR";
-            window.location.href = upiLink;
-        }
-
-        function fallbackCopy(text) {
-            const ta = document.createElement('textarea');
-            ta.value = text;
-            ta.style.position = 'fixed';
-            ta.style.opacity = '0';
-            document.body.appendChild(ta);
-            ta.focus();
-            ta.select();
-            try {
-                document.execCommand('copy');
-            } catch (e) {}
-            document.body.removeChild(ta);
-        }
-
-        function copyUPI() {
-            const id = "9410851090-n532@ybl";
-            if (navigator.clipboard && navigator.clipboard.writeText) {
-                navigator.clipboard.writeText(id).catch(() => fallbackCopy(id));
+            if (hash === 'home') {
+                document.title = "Advocate Vikas Yadav | District & Sessions Court, Etawah (U.P.)";
+                metaDescTag.setAttribute("content", "Advocate Vikas Yadav - Top Criminal, Civil & Matrimonial Lawyer at District & Sessions Court, Etawah.  Core Practice Areas.");
+                metaKeywordsTag.setAttribute("content", "advocate vikas yadav etawah, district court etawah lawyer, bail lawyer etawah, criminal defense etawah");
+                app.innerHTML = renderHomeView();
             } else {
-                fallbackCopy(id);
+                const topic = legalTopics.find(t => t.slug === hash);
+                if (topic) {
+                    document.title = topic.metaTitle;
+                    metaDescTag.setAttribute("content", topic.metaDesc);
+                    metaKeywordsTag.setAttribute("content", topic.searchTags);
+                    app.innerHTML = renderTopicView(topic);
+                } else {
+                    // Fallback to home if slug not found
+                    window.location.hash = '#home';
+                    return;
+                }
             }
-            const copyAlert = document.getElementById('copyAlert');
-            copyAlert.classList.remove('hidden');
-            setTimeout(() => copyAlert.classList.add('hidden'), 2500);
+
+            // Scroll to top on route change
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            
+            // Re-initialize Lucide Icons after dynamic HTML injection
+            if (window.lucide) {
+                window.lucide.createIcons();
+            }
         }
 
-        function goToUtrVerification() {
-            closePaymentModal();
-            const dlSec = document.getElementById('downloadSection');
-            if (dlSec) dlSec.scrollIntoView({ behavior: 'smooth' });
-            setTimeout(() => {
-                const utrInput = document.getElementById('utrInput');
-                if (utrInput) utrInput.focus();
-            }, 500);
+        // Search & Filtering Functions
+        function filterHomeGrid(searchTerm) {
+            const query = searchTerm.toLowerCase().trim();
+            const cards = document.querySelectorAll('.topic-card');
+            cards.forEach(card => {
+                const text = card.getAttribute('data-search') || '';
+                if (text.includes(query)) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
         }
 
-        // 4. 12-Digit UPI UTR Verification Logic
-        function verifyUtrAndUnlock() {
-            const utrVal = (document.getElementById('utrInput').value || '').trim();
-            const errEl = document.getElementById('utrErrorMsg');
-            const unlockBox = document.getElementById('unlockedDownloadBox');
+        function filterCategory(cat) {
+            // Update active button state
+            document.querySelectorAll('.cat-filter-btn').forEach(btn => {
+                btn.classList.remove('bg-gold-500', 'text-navy-950', 'font-bold');
+                btn.classList.add('bg-slate-800', 'text-slate-300');
+            });
+            const activeBtn = document.getElementById(`cat-${cat}`);
+            if (activeBtn) {
+                activeBtn.classList.remove('bg-slate-800', 'text-slate-300');
+                activeBtn.classList.add('bg-gold-500', 'text-navy-950', 'font-bold');
+            }
 
-            // Validate 12-digit numeric UTR
-            if (!/^\d{12}$/.test(utrVal)) {
-                errEl.classList.remove('hidden');
-                unlockBox.classList.add('hidden');
+            const cards = document.querySelectorAll('.topic-card');
+            cards.forEach(card => {
+                const itemCat = card.getAttribute('data-category');
+                if (cat === 'all' || itemCat === cat) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        }
+
+        // Quick Search Modal Logic
+        function openSearchModal() {
+            document.getElementById('searchModal').classList.remove('hidden');
+            const input = document.getElementById('quickSearchInput');
+            input.value = '';
+            input.focus();
+            handleQuickSearch('');
+        }
+
+        function closeSearchModal() {
+            document.getElementById('searchModal').classList.add('hidden');
+        }
+
+        function handleQuickSearch(query) {
+            const container = document.getElementById('searchResultsContainer');
+            const q = query.toLowerCase().trim();
+
+            if (!q) {
+                container.innerHTML = `
+                    <div class="text-slate-500 text-center py-6 text-xs">
+                        टाइप करें और इटावा कोर्ट के  विषयों में से तुरंत खोजें...
+                    </div>
+                `;
                 return;
             }
 
-            errEl.classList.add('hidden');
-            unlockBox.classList.remove('hidden');
-        }
+            const matched = legalTopics.filter(t => 
+                t.titleHi.toLowerCase().includes(q) || 
+                t.titleEn.toLowerCase().includes(q) || 
+                t.searchTags.toLowerCase().includes(q) ||
+                t.subTopics.some(s => s.title.toLowerCase().includes(q) || s.desc.toLowerCase().includes(q))
+            );
 
-        // 5. FAQ Accordion Logic
-        function toggleFaq(index) {
-            const body = document.getElementById('faqBody-' + index);
-            const icon = document.getElementById('faqIcon-' + index);
-            if (!body) return;
-            const isHidden = body.classList.contains('hidden');
-            if (isHidden) {
-                body.classList.remove('hidden');
-                if (icon) icon.classList.add('rotate-180');
-            } else {
-                body.classList.add('hidden');
-                if (icon) icon.classList.remove('rotate-180');
-            }
-        }
-
-        // 6. Popup Modal (#infoModal) Content for Privacy, Refund, Terms & Contact Us
-        // Constructed dynamically only when a user clicks one of the 4 footer links
-        const modalData = {
-            privacy: {
-                title: "🔒 Comprehensive Privacy Policy",
-                html: `
-                    <p class="text-[11px] text-amber-300 font-bold">Effective Date: January 2026 | DPDP Act 2023 & IT Act 2000 Compliant</p>
-                    <p><strong>1. Strict Confidentiality & Anonymity Mandate:</strong> We recognize that matrimonial, divorce, maintenance (Sec 125 CrPC / Sec 144 BNSS), DV Act, and 498A/85 BNS proceedings are highly sensitive personal matters. Every piece of information you share with Legal Fast-Track Consultancy is treated with absolute confidentiality.</p>
-                    <p><strong>2. Information We Collect:</strong> When you purchase the ₹399 Blueprint or book a ₹399 1-on-1 Legal Strategy Consultancy slot, we collect only minimal details necessary for service delivery—such as your 12-digit UPI UTR reference number, optional callback mobile number, and case facts voluntarily shared during your consultation session.</p>
-                    <p><strong>3. UPI & Financial Security:</strong> All ₹399 payments are processed directly through NPCI-certified UPI applications (Google Pay, PhonePe, Paytm, BHIM). We NEVER collect, view, or store your bank account numbers, UPI PINs, or card credentials on our platform.</p>
-                    <p><strong>4. Zero Third-Party Sharing Guarantee:</strong> We strictly DO NOT sell, rent, trade, or disclose your identity, phone number, email address, or case strategy to any third-party marketing agency, data broker, or external entity.</p>
-                    <p><strong>5. Protection Against Opposite Party Disclosure:</strong> Under no circumstances will your consultation notes, downloaded templates, or personal details ever be disclosed to your spouse, opposite party, or opposite counsel.</p>
-                    <p><strong>6. Data Encryption & Secure Access:</strong> Our web interface utilizes encrypted HTTPS protocols and secure cloud links for digital PDF delivery. Any case petitions reviewed during 1-on-1 sessions are kept strictly restricted.</p>
-                    <p><strong>7. Data Retention & Instant Purge Right:</strong> Consultation records are retained solely until your session is completed. You have the right to request permanent deletion of your data at any time after your session.</p>
-                    <p><strong>8. DigitalPersonal Data Protection Act (DPDP Act 2023) Compliance:</strong> In accordance with Indian data protection laws, your data is processed solely on the basis of your explicit consent for delivering the requested legal educational material and strategy session.</p>
-                    <p><strong>9. Consent & Policy Updates:</strong> By accessing this platform and verifying your UTR, you consent to this privacy framework. For any privacy grievance, please view the Contact Us tab inside this window.</p>
-                `
-            },
-            refund: {
-                title: "🛡️ Refund & Cancellation Policy",
-                html: `
-                    <p class="text-[11px] text-emerald-300 font-bold">Strict Digital Product & Consultancy Slot Booking Rules</p>
-                    <p><strong>1. Non-Refundable Digital Download Policy:</strong> The <em>Fast-Track Divorce & 2X Maintenance Blueprint</em> (including the 4 Core Modules and 15+ Ready-to-Use Court Application Formats) is an instant-access digital downloadable product offered at a heavily discounted price of ₹399. Due to the immediate, irreversible nature of digital PDF downloads and proprietary legal templates, all completed purchases are final and non-refundable once unlocked or delivered.</p>
-                    <p><strong>2. 1-on-1 Consultancy Slot Booking Rules:</strong> When you book the ₹399 1-on-1 Legal Strategy Consultancy, a dedicated senior expert slot is reserved for your case. You may request a one-time rescheduling of your telephonic consultation slot if needed, provided you notify our support desk prior to the scheduled call.</p>
-                    <p><strong>3. Duplicate Payment Resolution:</strong> If your ₹399 UPI payment is accidentally deducted twice from your bank account due to a banking or UPI server timeout, 100% of the duplicate extra payment will be refunded to your original UPI ID within 24–48 hours upon verification of both 12-digit UTR numbers.</p>
-                    <p><strong>4. Technical Delivery Assurance:</strong> In the rare event that you face a technical browser issue after entering your 12-digit UTR number, our support team will manually verify your UTR and deliver your complete PDF Blueprint & Draft package directly.</p>
-                `
-            },
-            terms: {
-                title: "⚖️ Terms & Conditions",
-                html: `
-                    <p class="text-[11px] text-purple-300 font-bold">User Agreement & Legal Disclaimer</p>
-                    <p><strong>1. Educational & Strategic Empowerment Nature:</strong> The Fast-Track Divorce & 2X Maintenance Blueprint, court application formats, cross-examination questionnaires, and 1-on-1 strategy sessions are designed for legal awareness, procedural education, and litigant empowerment. While our drafts cite authentic statutory provisions and Supreme Court rulings, final judicial outcomes always depend on the facts of each case and the discretion of the Hon'ble Court.</p>
-                    <p><strong>2. Applicability Across BNS, BNSS, CrPC, IPC & HMA:</strong> All procedural modules and templates cover both legacy statutes (CrPC 125, Sec 340, IPC 498A) and the updated Bharatiya Nyaya Sanhita (BNS), Bharatiya Nagarik Suraksha Sanhita (BNSS), Hindu Marriage Act (HMA), and Domestic Violence Act provisions applicable in Indian courts.</p>
-                    <p><strong>3. Copyright & Single-User License:</strong> All PDF modules, checklists, and 15+ application formats are copyrighted intellectual property of Legal Fast-Track Consultancy. Purchasing at ₹399 grants you a single-user personal license for your own case. Commercial reselling, public sharing, or unauthorized distribution is strictly prohibited.</p>
-                    <p><strong>4. Ethical & Lawful Compliance:</strong> Users agree to utilize these statutory drafts and legal remedies truthfully and lawfully before the courts. By proceeding with the ₹399 payment, you confirm that you have read and agreed to these Terms & Conditions.</p>
-                `
-            },
-            contact: {
-                title: "📞 Contact Us & Support Desk",
-                html: `
-                    <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 space-y-3">
-                        <p class="text-[11px] text-slate-300">For order assistance, UTR verification help, or 1-on-1 Consultancy slot coordination, you can reach our official support desk using the details below:</p>
-                        
-                        <div class="bg-slate-950 border border-slate-800 rounded-xl p-3">
-                            <p class="text-[10px] text-slate-400 uppercase font-bold">Helpline / Support Number</p>
-                            <p class="text-sm font-extrabold text-amber-400 mt-0.5">9458525302</p>
-                        </div>
-
-                        <div class="bg-slate-950 border border-slate-800 rounded-xl p-3">
-                            <p class="text-[10px] text-slate-400 uppercase font-bold">Official Support Email</p>
-                            <p class="text-sm font-extrabold text-emerald-400 mt-0.5 break-all">uncleben3311@gmail.com</p>
-                        </div>
-
-                        <div class="bg-slate-950 border border-slate-800 rounded-xl p-3">
-                            <p class="text-[10px] text-slate-400 uppercase font-bold">Working Timing</p>
-                            <p class="text-xs font-semibold text-slate-200 mt-0.5">Monday to Sunday: 10:00 AM – 09:00 PM (IST)</p>
-                        </div>
+            if (matched.length === 0) {
+                container.innerHTML = `
+                    <div class="text-slate-400 text-center py-6 text-xs">
+                        कोई संबंधित विषय नहीं मिला। कृपया अन्य शब्द (जैसे: Bail, NDPS, 498A) खोजें।
                     </div>
-                `
+                `;
+                return;
             }
-        };
 
-        function openInfoModal(sectionKey) {
-            const modal = document.getElementById('infoModal');
-            const titleEl = document.getElementById('infoModalTitle');
-            const bodyEl = document.getElementById('infoModalBody');
-            const data = modalData[sectionKey] || modalData.privacy;
+            container.innerHTML = matched.map(m => `
+                <a href="#${m.slug}" onclick="closeSearchModal()" class="block p-3 rounded-lg bg-slate-800/80 hover:bg-gold-500/10 border border-slate-700/60 hover:border-gold-500/40 transition-colors">
+                    <div class="flex items-center justify-between text-xs text-gold-400 font-bold mb-1">
+                        <span>#${m.num} • ${m.categoryName}</span>
+                        <span>क्लिक करके खोलें →</span>
+                    </div>
+                    <div class="font-bold text-white text-sm">${m.titleHi}</div>
+                    <div class="text-xs text-slate-400 mt-1 line-clamp-1">${m.metaDesc}</div>
+                </a>
+            `).join('');
+        }
 
-            titleEl.innerText = data.title;
-            bodyEl.innerHTML = data.html;
+        // Modal booking logic
+        function openBookingModal() {
+            document.getElementById('bookingModal').classList.remove('hidden');
+            document.getElementById('bookingSuccessMsg').classList.add('hidden');
+        }
 
-            // Highlight active tab inside modal
-            ['privacy', 'refund', 'terms', 'contact'].forEach(key => {
-                const tabBtn = document.getElementById('modalTab-' + key);
-                if (!tabBtn) return;
-                if (key === sectionKey) {
-                    tabBtn.className = "py-1.5 px-1 rounded-lg bg-purple-600 text-white truncate";
-                } else {
-                    tabBtn.className = "py-1.5 px-1 rounded-lg text-slate-400 hover:text-white truncate";
+        function openBookingModalForTopic(topicTitle) {
+            openBookingModal();
+            const select = document.getElementById('caseSubjectSelect');
+            for (let i = 0; i < select.options.length; i++) {
+                if (select.options[i].text.includes(topicTitle)) {
+                    select.selectedIndex = i;
+                    break;
+                }
+            }
+        }
+
+        function closeBookingModal() {
+            document.getElementById('bookingModal').classList.add('hidden');
+        }
+
+        function handleConsultationSubmit(e) {
+            e.preventDefault();
+            document.getElementById('bookingSuccessMsg').classList.remove('hidden');
+            setTimeout(() => {
+                e.target.reset();
+                closeBookingModal();
+            }, 3000);
+        }
+
+        // Mobile drawer navigation logic
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        function closeMobileMenu() {
+            document.getElementById('mobileMenu').classList.add('hidden');
+        }
+
+        // Initialize application on load
+        window.addEventListener('DOMContentLoaded', () => {
+            // Set dynamic current year in footer
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+            // Populate booking modal case selector options
+            const caseSelect = document.getElementById('caseSubjectSelect');
+            legalTopics.forEach(t => {
+                const opt = document.createElement('option');
+                opt.value = t.slug;
+                opt.textContent = `${t.num}. ${t.titleHi} (${t.titleEn})`;
+                caseSelect.appendChild(opt);
+            });
+
+            // Populate mobile nav items
+            const mobileContainer = document.getElementById('mobileNavItems');
+            legalTopics.forEach(t => {
+                const link = document.createElement('a');
+                link.href = `#${t.slug}`;
+                link.onclick = closeMobileMenu;
+                link.className = "py-1.5 px-2 hover:text-gold-400 rounded hover:bg-slate-800 block text-xs";
+                link.textContent = `${t.num}. ${t.titleEn}`;
+                mobileContainer.appendChild(link);
+            });
+
+            // Keyboard shortcut for Cmd/Ctrl + K search
+            window.addEventListener('keydown', (e) => {
+                if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+                    e.preventDefault();
+                    openSearchModal();
+                }
+                if (e.key === 'Escape') {
+                    closeSearchModal();
+                    closeBookingModal();
                 }
             });
 
-            modal.classList.remove('hidden');
-        }
+            // Listen to browser hash changes for SPA routing
+            window.addEventListener('hashchange', router);
 
-        function closeInfoModal() {
-            document.getElementById('infoModal').classList.add('hidden');
-        }
+            // Initial render
+            router();
+        });
     </script>
 </body>
 </html>
