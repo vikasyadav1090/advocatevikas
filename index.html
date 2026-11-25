@@ -91,22 +91,22 @@
 
     <div class="form-card">
         <h3>परामर्श के लिए विवरण दर्ज करें</h3>
-        <form id="consultationForm">
+        <form action="https://hook.eu1.make.com/mk8ae5xc2ipqsp15uapn1orze14e5cx5" method="POST">
             <div class="form-group">
                 <label for="name">आपका पूरा नाम *</label>
-                <input type="text" id="name" required placeholder="उदाहरण: राजेश शर्मा">
+                <input type="text" id="name" name="name" required placeholder="उदाहरण: राजेश शर्मा">
             </div>
             <div class="form-group">
                 <label for="phone">आपका व्हाट्सएप नंबर *</label>
-                <input type="tel" id="phone" required placeholder="उदाहरण: 9876543210">
+                <input type="tel" id="phone" name="phone" required placeholder="उदाहरण: 9876543210">
             </div>
             <div class="form-group">
                 <label for="state">आपका राज्य *</label>
-                <input type="text" id="state" required placeholder="उदाहरण: उत्तर प्रदेश">
+                <input type="text" id="state" name="state" required placeholder="उदाहरण: उत्तर प्रदेश">
             </div>
             <div class="form-group">
                 <label for="category">कानूनी मामले का प्रकार *</label>
-                <select id="category" required>
+                <select id="category" name="category" required>
                     <option value="" disabled selected>विषय चुनें</option>
                     <option value="दीवानी (Civil)">दीवानी (Civil Property/Contract)</option>
                     <option value="फौजदारी (Criminal)">फौजदारी (Criminal/Bail)</option>
@@ -117,9 +117,9 @@
             </div>
             <div class="form-group">
                 <label for="details">मामले का संक्षिप्त विवरण *</label>
-                <textarea id="details" rows="5" required placeholder="अपनी समस्या के बारे में मुख्य बिंदु लिखें..."></textarea>
+                <textarea id="details" name="details" rows="5" required placeholder="अपनी समस्या के बारे में मुख्य बिंदु लिखें..."></textarea>
             </div>
-            <button type="submit">WhatsApp पर सुरक्षित भेजें</button>
+            <button type="submit">जानकारी सुरक्षित भेजें</button>
         </form>
     </div>
 
@@ -139,37 +139,8 @@
 </div>
 
 <footer>
-    <p>&copy; 2026 LegalConsult India. सभी अधिकार सुरक्षित। यह एक कानूनी परामर्श सुविधा मंच है।</p>
+    <p>&copy; 2026 LegalConsult India. सभी अधिकार सुरक्षित। यह एक कानूनी परामर्श सुविधा मंच है。</p>
 </footer>
-
-<script>
-    document.getElementById('consultationForm').addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        const name = document.getElementById('name').value.trim();
-        const phone = document.getElementById('phone').value.trim();
-        const state = document.getElementById('state').value.trim();
-        const category = document.getElementById('category').value;
-        const details = document.getElementById('details').value.trim();
-        
-        // Clean phone number for URL (ensure it starts with 91 for India)
-        let cleanPhone = phone.replace(/\D/g, '');
-        if (cleanPhone.length === 10) {
-            cleanPhone = '91' + cleanPhone;
-        } else if (cleanPhone.length === 12 && cleanPhone.startsWith('91')) {
-            // already correct
-        } else {
-            alert('कृपया एक वैध 10 अंकों का मोबाइल नंबर दर्ज करें।');
-            return;
-        }
-
-        const message = नमस्ते, मुझे कानूनी परामर्श चाहिए।%0A%0A*नाम:* ${name}%0A*राज्य:* ${state}%0A*विषय:* ${category}%0A*विवरण:* ${details};
-        
-        const whatsappUrl = https://wa.me/${cleanPhone}?text=${message};
-        
-        window.location.href = whatsappUrl;
-    });
-</script>
 
 </body>
 </html>
